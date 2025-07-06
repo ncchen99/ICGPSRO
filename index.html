@@ -1,13 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/galaxy.png" />
+  <link rel="apple-touch-icon" href="/galaxy.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>ICGPSRO 2023 - International Conference on GPS Radio Occultation | Taipei, Taiwan</title>
+  <meta name="description"
+    content="Join ICGPSRO 2023 in Taipei, Taiwan (Oct 30 - Nov 3, 2023). Premier international conference on GPS Radio Occultation and GNSS-based remote sensing for atmospheric and space sciences." />
+  <meta name="keywords"
+    content="ICGPSRO, GPS Radio Occultation, GNSS, Remote Sensing, Atmospheric Sciences, Space Weather, Climate Research, Taiwan, Conference 2023" />
+  <meta name="author" content="ICGPSRO 2023 Conference Committee" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph Meta Tags (for social media sharing) -->
+  <meta property="og:title" content="ICGPSRO 2023 - International Conference on GPS Radio Occultation" />
+  <meta property="og:description"
+    content="Join us in Taipei, Taiwan (Oct 30 - Nov 3, 2023) for the premier international conference on GPS Radio Occultation and GNSS-based remote sensing." />
+  <meta property="og:type" content="event" />
+  <meta property="og:url" content="https://ncchen99.github.io/ICGPSRO/" />
+  <meta property="og:image" content="https://ncchen99.github.io/ICGPSRO/galaxy.png" />
+  <meta property="og:site_name" content="ICGPSRO 2023" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ICGPSRO 2023 - International Conference on GPS Radio Occultation" />
+  <meta name="twitter:description"
+    content="Join us in Taipei, Taiwan (Oct 30 - Nov 3, 2023) for the premier international conference on GPS Radio Occultation." />
+  <meta name="twitter:image" content="https://ncchen99.github.io/ICGPSRO/galaxy.png" />
+
+  <!-- Event Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "ICGPSRO 2023 - International Conference on GPS Radio Occultation",
+      "description": "International Conference on GPS Radio Occultation focusing on GNSS-based remote sensing, radio occultation and reflectometry, and their applications to weather, climate, and space weather science.",
+      "startDate": "2023-10-30",
+      "endDate": "2023-11-03",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Taipei, Taiwan",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Taipei",
+          "addressCountry": "Taiwan"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "ICGPSRO 2023 Conference Committee"
+      },
+      "url": "https://ncchen99.github.io/ICGPSRO/"
+    }
+    </script>
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#00ADB5" />
+  <meta name="msapplication-TileColor" content="#00ADB5" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
