@@ -126,7 +126,7 @@ const FAQ = () => {
                             viewport={{ once: true }}
                             className="space-y-6"
                         >
-                            <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal border-b-2 border-cosmic-teal/20 pb-4">
+                            <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl text-cosmic-teal border-b-2 border-cosmic-teal/20 pb-4">
                                 {category.category}
                             </h3>
 
@@ -147,7 +147,7 @@ const FAQ = () => {
                                                 onClick={() => toggleFAQ(categoryIndex, questionIndex)}
                                                 className="w-full p-6 text-left flex items-center justify-between hover:bg-gradient-to-r hover:from-cosmic-teal/5 hover:to-stellar-mint/5 transition-all duration-300"
                                             >
-                                                <h4 className="font-space font-semibold text-lg text-dark-space pr-4">
+                                                <h4 className="font-space font-semibold text-base sm:text-lg text-dark-space pr-4">
                                                     {faq.question}
                                                 </h4>
                                                 <div className={`transform transition-transform duration-300 text-cosmic-teal ${isOpen ? 'rotate-180' : ''

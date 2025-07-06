@@ -149,7 +149,7 @@ const Join = () => {
                             <h3 className="font-chaney text-lg sm:text-xl md:text-2xl text-cosmic-white mb-4">
                                 {option.title}
                             </h3>
-                            <div className="text-4xl font-chaney text-cosmic-teal mb-6">
+                            <div className="text-lg sm:text-xl md:text-2xl font-chaney text-cosmic-teal mb-6">
                                 {option.price}
                             </div>
 

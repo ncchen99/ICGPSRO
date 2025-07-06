@@ -73,7 +73,7 @@ const ConferenceIntro = ({ lenis }) => {
                     viewport={{ once: true }}
                     className="text-center mb-20"
                 >
-                    <h2 className="font-chaney text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-dark-space mb-8 leading-tight">
+                    <h2 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-dark-space mb-8 leading-tight">
                         <span className="text-cosmic-teal">Exploring</span> the Future
                         <br />
                         <span className="text-dark-space">of Space Science</span>
