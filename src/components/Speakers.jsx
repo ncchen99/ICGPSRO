@@ -100,7 +100,7 @@ const Speakers = () => {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="font-chaney text-4xl md:text-5xl lg:text-6xl text-cosmic-white mb-6">
+                    <h2 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cosmic-white mb-6">
                         Distinguished <span className="nebula-text">Speakers</span>
                     </h2>
                     <div className="section-divider max-w-md mx-auto"></div>

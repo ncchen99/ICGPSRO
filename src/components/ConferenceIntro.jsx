@@ -73,13 +73,13 @@ const ConferenceIntro = ({ lenis }) => {
                     viewport={{ once: true }}
                     className="text-center mb-20"
                 >
-                    <h2 className="font-chaney text-5xl md:text-6xl lg:text-7xl text-dark-space mb-8 leading-tight">
+                    <h2 className="font-chaney text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-dark-space mb-8 leading-tight">
                         <span className="text-cosmic-teal">Exploring</span> the Future
                         <br />
                         <span className="text-dark-space">of Space Science</span>
                     </h2>
                     <div className="w-32 h-1 bg-cosmic-teal mx-auto mb-12"></div>
-                    <p className="font-space text-2xl md:text-3xl text-dark-space max-w-5xl mx-auto leading-relaxed font-light">
+                    <p className="font-space text-lg sm:text-xl md:text-2xl lg:text-3xl text-dark-space max-w-5xl mx-auto leading-relaxed font-light">
                         ICGPSRO 2023 brings together the global community to advance GPS Radio Occultation
                         and GNSS-based remote sensing for atmospheric and space sciences.
                     </p>
@@ -124,7 +124,7 @@ const ConferenceIntro = ({ lenis }) => {
                         viewport={{ once: true }}
                         className="space-y-8"
                     >
-                        <h3 className="font-chaney text-4xl md:text-5xl text-dark-space mb-8 leading-tight">
+                        <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-dark-space mb-8 leading-tight">
                             About <span className="text-cosmic-teal">ICGPSRO</span>
                         </h3>
                         <div className="space-y-8 font-space text-dark-space">
@@ -149,7 +149,7 @@ const ConferenceIntro = ({ lenis }) => {
                         viewport={{ once: true }}
                         className="space-y-8"
                     >
-                        <h3 className="font-chaney text-4xl md:text-5xl text-dark-space mb-8 leading-tight">
+                        <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-dark-space mb-8 leading-tight">
                             Conference <span className="text-cosmic-teal">Themes</span>
                         </h3>
                         <div className="space-y-6">
@@ -181,7 +181,7 @@ const ConferenceIntro = ({ lenis }) => {
                     <div className="bg-gradient-to-br from-cosmic-teal to-dark-space rounded-3xl p-16 text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute inset-0 bg-black opacity-10"></div>
                         <div className="relative z-10 space-y-8">
-                            <h3 className="font-chaney text-4xl md:text-5xl mb-8 leading-tight">
+                            <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:t xl:text-6xl mb-8 leading-tight">
                                 Ready to <span className="text-stellar-mint">Explore</span>?
                             </h3>
                             <p className="font-space text-xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">

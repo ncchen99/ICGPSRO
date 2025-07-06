@@ -107,7 +107,7 @@ const FAQ = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="font-chaney text-4xl md:text-5xl lg:text-6xl text-dark-space mb-6">
+                    <h2 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-dark-space mb-6">
                         Frequently Asked <span className="text-cosmic-teal">Questions</span>
                     </h2>
                     <div className="w-24 h-1 bg-cosmic-teal mx-auto mb-8"></div>

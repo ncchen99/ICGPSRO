@@ -35,7 +35,7 @@ const Banner = ({ lenis }) => {
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1, delay: 0.2 }}
-                            className="font-chaney text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-cosmic-white leading-tight tracking-tight nebula-text mb-16"
+                            className="font-chaney text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-cosmic-white leading-tight tracking-tight nebula-text mb-16"
                         >
                             ICGPSRO
                         </motion.h1>
@@ -46,7 +46,7 @@ const Banner = ({ lenis }) => {
                             transition={{ duration: 1, delay: 0.4 }}
                             className="space-y-8 mb-16 px-8"
                         >
-                            <h2 className="font-space text-2xl md:text-3xl lg:text-4xl text-stellar-mint font-light leading-relaxed">
+                            <h2 className="font-space text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-stellar-mint font-light leading-relaxed">
                                 International Conference on GPS Radio Occultation
                             </h2>
                         </motion.div>
@@ -60,7 +60,7 @@ const Banner = ({ lenis }) => {
                         className="space-y-12 mb-24 px-12"
                     >
                         {/* Date and location */}
-                        <div className="flex flex-col md:flex-row justify-center items-center gap-12 text-xl md:text-2xl font-space">
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-12 text-lg md:text-xl lg:text-2xl font-space">
                             <div className="flex items-center space-x-6">
                                 <div className="w-6 h-6 bg-cosmic-teal rounded-full"></div>
                                 <span className="text-cosmic-white">October 30 - November 3, 2023</span>
@@ -73,7 +73,7 @@ const Banner = ({ lenis }) => {
 
                         {/* Description */}
                         <div className="max-w-4xl mx-auto px-8">
-                            <p className="text-xl md:text-2xl text-stellar-mint leading-relaxed font-space font-light text-center">
+                            <p className="text-lg md:text-xl lg:text-2xl text-stellar-mint leading-relaxed font-space font-light text-center">
                                 Advancing GNSS-based remote sensing for weather, climate, and space weather applications
                             </p>
                         </div>
