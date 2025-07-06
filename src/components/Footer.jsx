@@ -201,7 +201,7 @@ const Footer = ({ lenis }) => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                     viewport={{ once: true }}
-                                    className="space-card rounded-xl p-6 text-center hover:cosmic-glow transition-all duration-300"
+                                    className="space-card framer-animated rounded-xl p-6 text-center hover:cosmic-glow transition-all duration-300"
                                 >
                                     <div className="mb-4 flex justify-center">
                                         <IconComponent className="w-10 h-10 text-cosmic-teal" />

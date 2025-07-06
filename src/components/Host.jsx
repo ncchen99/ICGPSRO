@@ -90,7 +90,7 @@ const Host = () => {
                                         <motion.div
                                             key={org.name}
                                             variants={itemVariants}
-                                            className="space-card rounded-2xl p-6 group hover:cosmic-glow transition-all duration-500"
+                                            className="space-card framer-animated rounded-2xl p-6 group hover:cosmic-glow transition-all duration-500"
                                             whileHover={{ scale: 1.05 }}
                                             whileTap={{ scale: 0.95 }}
                                         >
@@ -121,7 +121,7 @@ const Host = () => {
                     viewport={{ once: true }}
                     className="text-center mt-12"
                 >
-                    <div className="space-card rounded-3xl p-8 max-w-4xl mx-auto">
+                    <div className="space-card framer-animated rounded-3xl p-8 max-w-4xl mx-auto">
                         <p className="font-space text-lg md:text-xl text-stellar-mint leading-relaxed">
                             "ICGPSRO 2023 brings together the global community of researchers, scientists, and
                             industry professionals to advance the field of GPS Radio Occultation and its

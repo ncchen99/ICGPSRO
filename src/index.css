@@ -82,13 +82,6 @@
     pointer-events: none;
   }
 
-  .cosmic-glow {
-    box-shadow:
-      0 0 20px color-mix(in srgb, theme('colors.cosmic-teal') 30%, transparent),
-      0 0 40px color-mix(in srgb, theme('colors.cosmic-teal') 20%, transparent),
-      0 0 60px color-mix(in srgb, theme('colors.cosmic-teal') 10%, transparent);
-  }
-
   .nebula-text {
     background: linear-gradient(45deg, theme('colors.cosmic-teal'), theme('colors.stellar-mint'), theme('colors.cosmic-white'));
     background-size: 200% 200%;
@@ -99,19 +92,19 @@
   }
 
   .space-card {
-    background: color-mix(in srgb, theme('colors.dark-space') 80%, transparent);
+    background: rgba(57, 62, 70, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid color-mix(in srgb, theme('colors.cosmic-teal') 20%, transparent);
+    border: 1px solid rgba(0, 173, 181, 0.2);
     transition: all 0.3s ease;
   }
 
   .space-card:hover {
-    background: color-mix(in srgb, theme('colors.dark-space') 90%, transparent);
-    border-color: color-mix(in srgb, theme('colors.cosmic-teal') 40%, transparent);
+    background: rgba(57, 62, 70, 0.9);
+    border-color: rgba(0, 173, 181, 0.4);
     transform: translateY(-5px);
     box-shadow:
-      0 10px 30px color-mix(in srgb, theme('colors.cosmic-teal') 20%, transparent),
-      0 0 50px color-mix(in srgb, theme('colors.cosmic-teal') 10%, transparent);
+      0 10px 30px rgba(0, 173, 181, 0.2),
+      0 0 50px rgba(0, 173, 181, 0.1);
   }
 
   .cosmic-button {
@@ -121,6 +114,7 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    z-index: 10;
   }
 
   .cosmic-button::before {
@@ -130,7 +124,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, color-mix(in srgb, theme('colors.stellar-mint') 40%, transparent), transparent);
+    background: linear-gradient(90deg, transparent, rgba(170, 216, 211, 0.4), transparent);
     transition: left 0.5s;
   }
 
@@ -141,8 +135,15 @@
   .cosmic-button:hover {
     transform: translateY(-2px);
     box-shadow:
-      0 10px 25px color-mix(in srgb, theme('colors.cosmic-teal') 30%, transparent),
-      0 0 40px color-mix(in srgb, theme('colors.cosmic-teal') 20%, transparent);
+      0 10px 25px rgba(0, 173, 181, 0.3),
+      0 0 40px rgba(0, 173, 181, 0.2);
+  }
+
+  .cosmic-glow {
+    box-shadow:
+      0 0 20px rgba(0, 173, 181, 0.3),
+      0 0 40px rgba(0, 173, 181, 0.2),
+      0 0 60px rgba(0, 173, 181, 0.1);
   }
 }
 

@@ -131,7 +131,7 @@ const Join = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className={`space-card rounded-3xl p-8 text-center relative ${option.popular ? 'cosmic-glow ring-2 ring-cosmic-teal' : ''
+                            className={`space-card framer-animated rounded-3xl p-8 text-center relative ${option.popular ? 'cosmic-glow ring-2 ring-cosmic-teal' : ''
                                 } hover:cosmic-glow transition-all duration-500`}
                             whileHover={{ scale: 1.02 }}
                         >
@@ -162,7 +162,10 @@ const Join = () => {
                                 ))}
                             </ul>
 
-                            <button className="cosmic-button w-full py-4 rounded-full font-semibold font-space text-lg">
+                            <button
+                                onClick={() => window.open('https://forms.google.com/icgpsro2023', '_blank')}
+                                className="cosmic-button w-full py-4 rounded-full font-semibold font-space text-lg relative z-20 cursor-pointer"
+                            >
                                 <span className="relative z-10">Select Plan</span>
                             </button>
                         </motion.div>
@@ -189,7 +192,7 @@ const Join = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                className={`space-card rounded-2xl p-6 text-center border-l-4 ${date.status === 'active' ? 'border-cosmic-teal cosmic-glow' :
+                                className={`space-card framer-animated rounded-2xl p-6 text-center border-l-4 ${date.status === 'active' ? 'border-cosmic-teal cosmic-glow' :
                                     date.status === 'ended' ? 'border-gray-500 opacity-60' :
                                         date.status === 'event' ? 'border-stellar-mint' :
                                             'border-cosmic-teal/50'
@@ -262,7 +265,7 @@ const Join = () => {
                     viewport={{ once: true }}
                     className="text-center"
                 >
-                    <div className="space-card rounded-3xl p-12 max-w-4xl mx-auto">
+                    <div className="space-card framer-animated rounded-3xl p-12 max-w-4xl mx-auto">
                         <div className="mb-6 flex justify-center">
                             <Rocket className="w-16 h-16 text-cosmic-teal" />
                         </div>
@@ -277,11 +280,22 @@ const Join = () => {
                         <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
                             <button
                                 onClick={() => window.open('https://forms.google.com/icgpsro2023', '_blank')}
-                                className="cosmic-button px-8 py-4 rounded-full font-semibold font-space text-lg w-full sm:w-auto"
+                                className="cosmic-button px-8 py-4 rounded-full font-semibold font-space text-lg w-full sm:w-auto relative z-20 cursor-pointer"
                             >
                                 <span className="relative z-10">Register Now</span>
                             </button>
-                            <button className="px-8 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg w-full sm:w-auto">
+                            <button
+                                onClick={() => {
+                                    // 創建一個下載鏈接
+                                    const link = document.createElement('a');
+                                    link.href = '/brochure/ICGPSRO2023-Brochure.pdf';
+                                    link.download = 'ICGPSRO2023-Brochure.pdf';
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    document.body.removeChild(link);
+                                }}
+                                className="px-8 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg w-full sm:w-auto relative z-20 cursor-pointer"
+                            >
                                 Download Brochure
                             </button>
                         </div>

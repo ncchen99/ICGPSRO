@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Satellite, Globe, Star, Microscope } from 'lucide-react';
 
-const ConferenceIntro = () => {
+const ConferenceIntro = ({ lenis }) => {
     const highlights = [
         {
             icon: Satellite,
@@ -188,10 +188,16 @@ const ConferenceIntro = () => {
                                 Be part of the global community advancing GPS Radio Occultation science
                             </p>
                             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                                <button className="cosmic-button px-10 py-4 rounded-full font-semibold font-space text-lg hover:scale-105 transition-transform duration-300">
+                                <button
+                                    className="cosmic-button px-10 py-4 rounded-full font-semibold font-space text-lg hover:scale-105 transition-transform duration-300"
+                                    onClick={() => lenis?.scrollTo('#agenda', { duration: 2 })}
+                                >
                                     <span className="relative z-10">View Agenda</span>
                                 </button>
-                                <button className="px-10 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg hover:scale-105">
+                                <button
+                                    className="px-10 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg hover:scale-105"
+                                    onClick={() => lenis?.scrollTo('#speakers', { duration: 2 })}
+                                >
                                     Meet Speakers
                                 </button>
                             </div>

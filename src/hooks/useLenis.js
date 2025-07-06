@@ -8,15 +8,12 @@ export const useLenis = (options = {}) => {
     useEffect(() => {
         // 避免重複初始化
         if (lenisRef.current) {
-            console.log('⚠️ Lenis already initialized, skipping...');
             return;
         }
 
         // 確保在 DOM 完全載入後初始化
         const initLenis = () => {
             try {
-                console.log('🚀 Starting Lenis initialization...');
-
                 // 初始化 Lenis (最新版本) - 使用正確的參數名稱
                 const lenis = new Lenis({
                     duration: 1.2,
@@ -42,22 +39,6 @@ export const useLenis = (options = {}) => {
 
                 requestAnimationFrame(raf);
 
-                // 添加調試日誌
-                console.log('✅ Lenis initialized successfully:', lenis);
-                console.log('✅ State updated, component should re-render');
-
-                // 測試 scrollTo 方法是否存在
-                if (lenis && typeof lenis.scrollTo === 'function') {
-                    console.log('✅ Lenis scrollTo method is available');
-                } else {
-                    console.error('❌ Lenis scrollTo method is NOT available');
-                }
-
-                // 添加滾動事件監聽來驗證 Lenis 是否工作
-                lenis.on('scroll', (e) => {
-                    // console.log('Lenis scroll event:', e.scroll);
-                });
-
             } catch (error) {
                 console.error('❌ Failed to initialize Lenis:', error);
             }
@@ -72,7 +53,6 @@ export const useLenis = (options = {}) => {
                 lenisRef.current.destroy();
                 lenisRef.current = null;
                 setLenisInstance(null);
-                console.log('🧹 Lenis destroyed');
             }
         };
     }, []); // 空依賴數組，只執行一次

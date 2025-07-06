@@ -24,9 +24,6 @@ function App() {
   const GOOGLE_FORM_URL = "https://forms.google.com/your-form-url-here";
 
   useEffect(() => {
-    // 調試日誌 - 追蹤 lenis 狀態變化
-    console.log('🔄 App component effect triggered, lenis:', lenis);
-
     // GSAP ScrollTrigger animations for enhanced user experience
     if (gsapContext) {
       gsapContext.add(() => {
@@ -38,8 +35,8 @@ function App() {
           ease: 'power3.out'
         });
 
-        // Animate cards with stagger effect
-        animateOnScroll('.space-card', {
+        // Animate cards with stagger effect (excluding framer-motion animated cards)
+        animateOnScroll('.space-card:not(.framer-animated)', {
           y: 60,
           opacity: 0,
           duration: 1,
@@ -74,49 +71,7 @@ function App() {
         });
       });
     }
-  }, [gsapContext, lenis]); // 添加 lenis 作為依賴
-
-  // 改進的測試滑動功能
-  const testScroll = (target) => {
-    console.log('=== Testing scroll ===');
-    console.log('Target:', target);
-    console.log('Lenis instance:', lenis);
-    console.log('Lenis type:', typeof lenis);
-
-    if (!lenis) {
-      console.error('❌ Lenis instance not available');
-      console.log('💡 Try waiting a moment for Lenis to initialize...');
-      return;
-    }
-
-    if (typeof lenis.scrollTo !== 'function') {
-      console.error('❌ scrollTo method not available on Lenis instance');
-      console.log('Available methods:', Object.keys(lenis));
-      return;
-    }
-
-    // 檢查目標元素是否存在（如果是選擇器）
-    if (typeof target === 'string' && target.startsWith('#')) {
-      const element = document.querySelector(target);
-      console.log('Target element:', element);
-      if (!element) {
-        console.error(`❌ Target element "${target}" not found in DOM`);
-        return;
-      }
-    }
-
-    try {
-      console.log('✅ Attempting to scroll to:', target);
-      lenis.scrollTo(target, {
-        duration: 2,
-        onComplete: () => {
-          console.log('✅ Scroll completed successfully to:', target);
-        }
-      });
-    } catch (error) {
-      console.error('❌ Error during scroll:', error);
-    }
-  };
+  }, [gsapContext, lenis]);
 
   return (
     <div className="min-h-screen bg-dark-space overflow-x-hidden">
@@ -134,7 +89,7 @@ function App() {
 
         {/* Conference Introduction Section */}
         <section id="conference-intro" className="py-20 px-6">
-          <ConferenceIntro />
+          <ConferenceIntro lenis={lenis} />
         </section>
 
         {/* Speakers Section */}
@@ -161,39 +116,6 @@ function App() {
       {/* Footer with Contact & Traffic Info */}
       <Footer lenis={lenis} />
 
-      {/* 測試按鈕區域 - 開發時使用 */}
-      {process.env.NODE_ENV === 'development' && (
-        <div className="fixed top-4 right-4 z-50 space-y-2">
-          <div className="text-xs text-white bg-black bg-opacity-50 p-2 rounded mb-2">
-            Lenis: {lenis ? '✅ Ready' : '⏳ Loading...'}
-          </div>
-          <button
-            onClick={() => testScroll('#agenda')}
-            className="block bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition-colors"
-          >
-            Test Agenda
-          </button>
-          <button
-            onClick={() => testScroll('#speakers')}
-            className="block bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 transition-colors"
-          >
-            Test Speakers
-          </button>
-          <button
-            onClick={() => testScroll(0)}
-            className="block bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600 transition-colors"
-          >
-            Test Top
-          </button>
-          <button
-            onClick={() => testScroll('#conference-intro')}
-            className="block bg-purple-500 text-white px-3 py-1 rounded text-sm hover:bg-purple-600 transition-colors"
-          >
-            Test Intro
-          </button>
-        </div>
-      )}
-
       {/* Floating Action Button for Quick Registration */}
       <div className="fixed bottom-8 right-8 z-40">
         <button
@@ -208,7 +130,7 @@ function App() {
       {/* Scroll to top button */}
       <div className="fixed bottom-8 left-8 z-40">
         <button
-          onClick={() => testScroll(0)}
+          onClick={() => lenis?.scrollTo(0, { duration: 2 })}
           className="cosmic-button w-12 h-12 rounded-full shadow-2xl flex items-center justify-center group hover:scale-110 transition-transform duration-300"
           title="Back to Top"
         >

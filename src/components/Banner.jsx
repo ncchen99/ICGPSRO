@@ -78,43 +78,21 @@ const Banner = ({ lenis }) => {
                             </p>
                         </div>
                     </motion.div>
-
-                    {/* Action buttons
+                    {/* Scroll indicator - 放在描述文字下方 */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.8 }}
-                        className="flex flex-wrap justify-center items-center gap-8 mb-16 px-12"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1.2 }}
+                        className="flex flex-col items-center space-y-4 text-stellar-mint"
                     >
-                        <button
-                            onClick={scrollToAgenda}
-                            className="cosmic-button text-lg font-semibold px-12 py-4 rounded-full hover:scale-105 transform transition-all duration-300"
-                        >
-                            <span className="relative z-10">View Agenda</span>
-                        </button>
-                        <button
-                            onClick={scrollToSpeakers}
-                            className="cosmic-button text-lg font-semibold px-12 py-4 rounded-full hover:scale-105 transform transition-all duration-300"
-                        >
-                            <span className="relative z-10">Meet Speakers</span>
-                        </button>
-                    </motion.div> */}
-                </div>
 
-                {/* Scroll indicator - 調整位置到畫面底部中央 */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 1.2 }}
-                    className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-                >
-                    <div className="flex flex-col items-center space-y-3 text-stellar-mint">
-                        <span className="font-space text-sm opacity-70">探索更多</span>
-                        <div className="w-8 h-12 border-2 border-stellar-mint rounded-full flex justify-center hover:border-cosmic-teal transition-colors duration-300">
+                        <div className="w-8 h-12 border-2 border-stellar-mint rounded-full flex justify-center hover:border-cosmic-teal transition-colors duration-300 cursor-pointer">
                             <div className="w-2 h-4 bg-stellar-mint rounded-full animate-bounce mt-3"></div>
                         </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
+
+                </div>
+
             </div>
         </section>
     );

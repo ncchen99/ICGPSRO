@@ -132,7 +132,7 @@ const Speakers = () => {
                                     whileInView="visible"
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.2 }}
-                                    className="space-card rounded-3xl p-6 text-center group hover:cosmic-glow transition-all duration-500"
+                                    className="space-card framer-animated rounded-3xl p-6 text-center group hover:cosmic-glow transition-all duration-500"
                                     whileHover={{ scale: 1.02 }}
                                 >
                                     <div className="relative mb-4">
@@ -189,7 +189,7 @@ const Speakers = () => {
                                 <motion.div
                                     key={speaker.name}
                                     variants={itemVariants}
-                                    className="space-card rounded-2xl p-4 text-center group hover:cosmic-glow transition-all duration-300"
+                                    className="space-card framer-animated rounded-2xl p-4 text-center group hover:cosmic-glow transition-all duration-300"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
@@ -215,7 +215,7 @@ const Speakers = () => {
                     viewport={{ once: true }}
                     className="text-center"
                 >
-                    <div className="space-card rounded-3xl p-8 max-w-4xl mx-auto">
+                    <div className="space-card framer-animated rounded-3xl p-8 max-w-4xl mx-auto">
                         <div className="mb-4 flex justify-center">
                             <GraduationCap className="w-12 h-12 text-cosmic-teal" />
                         </div>
