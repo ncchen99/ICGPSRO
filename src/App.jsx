@@ -20,6 +20,9 @@ function App() {
   // GSAP context for scroll-triggered animations
   const gsapContext = useGSAP();
 
+  // Google Form URL for registration
+  const GOOGLE_FORM_URL = "https://forms.google.com/your-form-url-here";
+
   useEffect(() => {
     // GSAP ScrollTrigger animations for enhanced user experience
     if (gsapContext) {
@@ -116,9 +119,9 @@ function App() {
       {/* Floating Action Button for Quick Registration */}
       <div className="fixed bottom-8 right-8 z-40">
         <button
-          onClick={() => lenis?.scrollTo('#join', { duration: 2 })}
+          onClick={() => window.open(GOOGLE_FORM_URL, '_blank')}
           className="cosmic-button w-16 h-16 rounded-full shadow-2xl flex items-center justify-center group hover:scale-110 transition-transform duration-300"
-          title="Quick Registration"
+          title="Register Now"
         >
           <Rocket className="w-6 h-6 relative z-10 group-hover:animate-bounce" />
         </button>
