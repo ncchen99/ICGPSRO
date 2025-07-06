@@ -1,8 +1,7 @@
 /* Import external fonts first */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* Import Chaney font locally - Temporarily disabled for deployment */
-/*
+/* Import Chaney font locally */
 @font-face {
   font-family: 'Chaney Ultra Extended';
   src: url('/fonts/chaney-ultraextended-webfont.eot');
@@ -14,7 +13,6 @@
   font-style: normal;
   font-display: swap;
 }
-*/
 
 /* Tailwind CSS v3 directives */
 @tailwind base;
