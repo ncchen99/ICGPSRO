@@ -7,7 +7,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                'chaney': ['Chaney Ultra Extended', 'Arial Black', 'sans-serif'],
+                'chaney': ['Impact', 'Arial Black', 'sans-serif'],
                 'space': ['Inter', 'system-ui', 'sans-serif'],
             },
             colors: {
