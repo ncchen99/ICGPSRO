@@ -195,7 +195,7 @@ const FAQ = () => {
                         <div className="mb-6 flex justify-center">
                             <HelpCircle className="w-16 h-16 text-stellar-mint" />
                         </div>
-                        <h3 className="font-chaney text-3xl md:text-4xl mb-6">
+                        <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6">
                             Still Have <span className="text-stellar-mint">Questions</span>?
                         </h3>
                         <p className="font-space text-xl mb-8 max-w-2xl mx-auto leading-relaxed">

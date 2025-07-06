@@ -146,7 +146,7 @@ const Join = () => {
                             <div className="mb-6 flex justify-center">
                                 <option.icon className="w-16 h-16 text-cosmic-teal" />
                             </div>
-                            <h3 className="font-chaney text-2xl text-cosmic-white mb-4">
+                            <h3 className="font-chaney text-lg sm:text-xl md:text-2xl text-cosmic-white mb-4">
                                 {option.title}
                             </h3>
                             <div className="text-4xl font-chaney text-cosmic-teal mb-6">
@@ -180,7 +180,7 @@ const Join = () => {
                     viewport={{ once: true }}
                     className="mb-20"
                 >
-                    <h3 className="font-chaney text-3xl md:text-4xl text-cosmic-teal text-center mb-12">
+                    <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-teal text-center mb-12">
                         Important Dates
                     </h3>
 
@@ -226,7 +226,7 @@ const Join = () => {
                     viewport={{ once: true }}
                     className="mb-16"
                 >
-                    <h3 className="font-chaney text-3xl md:text-4xl text-cosmic-teal text-center mb-12">
+                    <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-teal text-center mb-12">
                         Why Attend ICGPSRO?
                     </h3>
 
@@ -245,7 +245,7 @@ const Join = () => {
                                     <div className="mb-4 group-hover:animate-bounce flex justify-center">
                                         <IconComponent className="w-12 h-12 text-cosmic-teal" />
                                     </div>
-                                    <h4 className="font-chaney text-xl text-cosmic-white mb-3 group-hover:text-stellar-mint transition-colors duration-300">
+                                    <h4 className="font-chaney text-lg sm:text-xl text-cosmic-white mb-3 group-hover:text-stellar-mint transition-colors duration-300">
                                         {benefit.title}
                                     </h4>
                                     <p className="font-space text-stellar-mint leading-relaxed">
@@ -269,7 +269,7 @@ const Join = () => {
                         <div className="mb-6 flex justify-center">
                             <Rocket className="w-16 h-16 text-cosmic-teal" />
                         </div>
-                        <h3 className="font-chaney text-3xl md:text-4xl text-cosmic-white mb-6">
+                        <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-white mb-6">
                             Ready to <span className="text-cosmic-teal">Launch</span> Your Journey?
                         </h3>
                         <p className="font-space text-lg text-stellar-mint mb-8 leading-relaxed">

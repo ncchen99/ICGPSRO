@@ -403,7 +403,7 @@ const Agenda = () => {
                 >
                     {/* Day header */}
                     <div className="text-center mb-12">
-                        <h3 className="font-chaney text-3xl md:text-4xl text-dark-space mb-4">
+                        <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-dark-space mb-4">
                             {schedule[selectedDay].date}
                         </h3>
                         <p className="font-space text-xl text-cosmic-teal font-medium">
@@ -435,7 +435,7 @@ const Agenda = () => {
                                                     {session.type.toUpperCase()}
                                                 </span>
                                             </div>
-                                            <h4 className="font-chaney text-xl text-dark-space mb-2">
+                                            <h4 className="font-chaney text-lg sm:text-xl md:text-xl text-dark-space mb-2">
                                                 {session.title}
                                             </h4>
                                             {session.speaker && (
@@ -466,7 +466,7 @@ const Agenda = () => {
                         <div className="mb-4 flex justify-center">
                             <Clock className="w-10 h-10 text-cosmic-teal" />
                         </div>
-                        <h4 className="font-chaney text-xl text-dark-space mb-2">Sessions</h4>
+                        <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Sessions</h4>
                         <p className="font-space text-dark-space opacity-80">
                             35+ technical sessions covering all aspects of GPS RO
                         </p>
@@ -475,7 +475,7 @@ const Agenda = () => {
                         <div className="mb-4 flex justify-center">
                             <Users className="w-10 h-10 text-cosmic-teal" />
                         </div>
-                        <h4 className="font-chaney text-xl text-dark-space mb-2">Networking</h4>
+                        <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Networking</h4>
                         <p className="font-space text-dark-space opacity-80">
                             Multiple opportunities to connect with global experts
                         </p>
@@ -484,7 +484,7 @@ const Agenda = () => {
                         <div className="mb-4 flex justify-center">
                             <Calendar className="w-10 h-10 text-cosmic-teal" />
                         </div>
-                        <h4 className="font-chaney text-xl text-dark-space mb-2">Students</h4>
+                        <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Students</h4>
                         <p className="font-space text-dark-space opacity-80">
                             Special programs and awards for student participants
                         </p>

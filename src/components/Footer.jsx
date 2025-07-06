@@ -187,7 +187,7 @@ const Footer = ({ lenis }) => {
                     viewport={{ once: true }}
                     className="mt-16 pt-12 border-t border-cosmic-teal/20"
                 >
-                    <h4 className="font-chaney text-2xl text-cosmic-teal text-center mb-12">
+                    <h4 className="font-chaney text-lg sm:text-xl md:text-2xl text-cosmic-teal text-center mb-12">
                         Getting to Taipei
                     </h4>
 
@@ -233,7 +233,7 @@ const Footer = ({ lenis }) => {
                     className="mt-16 pt-12 border-t border-cosmic-teal/20"
                 >
                     <div className="text-center max-w-2xl mx-auto">
-                        <h4 className="font-chaney text-2xl text-cosmic-teal mb-4">
+                        <h4 className="font-chaney text-lg sm:text-xl md:text-2xl text-cosmic-teal mb-4">
                             Stay Updated
                         </h4>
                         <p className="font-space text-stellar-mint mb-8">

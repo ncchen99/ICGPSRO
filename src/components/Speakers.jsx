@@ -117,7 +117,7 @@ const Speakers = () => {
                     viewport={{ once: true }}
                     className="mb-16"
                 >
-                    <h3 className="font-chaney text-3xl md:text-4xl text-cosmic-teal text-center mb-8">
+                    <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-teal text-center mb-8">
                         Keynote Speakers
                     </h3>
 
@@ -172,7 +172,7 @@ const Speakers = () => {
                     viewport={{ once: true }}
                     className="mb-12"
                 >
-                    <h3 className="font-chaney text-3xl md:text-4xl text-cosmic-teal text-center mb-8">
+                    <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-teal text-center mb-8">
                         Featured Speakers
                     </h3>
 
@@ -219,7 +219,7 @@ const Speakers = () => {
                         <div className="mb-4 flex justify-center">
                             <GraduationCap className="w-12 h-12 text-cosmic-teal" />
                         </div>
-                        <h3 className="font-chaney text-3xl md:text-4xl text-cosmic-white mb-4">
+                        <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-white mb-4">
                             Student <span className="text-cosmic-teal">Program</span>
                         </h3>
                         <p className="font-space text-base text-stellar-mint mb-6 leading-relaxed">

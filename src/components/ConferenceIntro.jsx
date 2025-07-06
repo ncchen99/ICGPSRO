@@ -104,7 +104,7 @@ const ConferenceIntro = ({ lenis }) => {
                                 <div className="w-24 h-24 mx-auto mb-8 bg-gradient-to-br from-cosmic-teal to-stellar-mint rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                     <IconComponent className="w-10 h-10 text-white" />
                                 </div>
-                                <h3 className="font-chaney text-2xl text-dark-space mb-6 group-hover:text-cosmic-teal transition-colors duration-300">
+                                <h3 className="font-chaney text-lg sm:text-xl md:text-2xl text-dark-space mb-6 group-hover:text-cosmic-teal transition-colors duration-300">
                                     {highlight.title}
                                 </h3>
                                 <p className="font-space text-dark-space opacity-80 leading-relaxed text-lg">
@@ -181,7 +181,7 @@ const ConferenceIntro = ({ lenis }) => {
                     <div className="bg-gradient-to-br from-cosmic-teal to-dark-space rounded-3xl p-16 text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute inset-0 bg-black opacity-10"></div>
                         <div className="relative z-10 space-y-8">
-                            <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:t xl:text-6xl mb-8 leading-tight">
+                            <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-8 leading-tight">
                                 Ready to <span className="text-stellar-mint">Explore</span>?
                             </h3>
                             <p className="font-space text-xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">
