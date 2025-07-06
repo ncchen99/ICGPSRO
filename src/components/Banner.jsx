@@ -57,7 +57,7 @@ const Banner = ({ lenis }) => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.6 }}
-                        className="space-y-12 mb-16 px-12"
+                        className="space-y-12 mb-24 px-12"
                     >
                         {/* Date and location */}
                         <div className="flex flex-col md:flex-row justify-center items-center gap-12 text-xl md:text-2xl font-space">
@@ -101,15 +101,16 @@ const Banner = ({ lenis }) => {
                     </motion.div> */}
                 </div>
 
-                {/* Scroll indicator */}
+                {/* Scroll indicator - 調整位置到畫面底部中央 */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1.2 }}
-                    className="absolute bottom-16 left-1/2 transform -translate-x-1/2"
+                    className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
                 >
-                    <div className="flex flex-col items-center space-y-4 text-stellar-mint">
-                        <div className="w-8 h-12 border-2 border-stellar-mint rounded-full flex justify-center">
+                    <div className="flex flex-col items-center space-y-3 text-stellar-mint">
+                        <span className="font-space text-sm opacity-70">探索更多</span>
+                        <div className="w-8 h-12 border-2 border-stellar-mint rounded-full flex justify-center hover:border-cosmic-teal transition-colors duration-300">
                             <div className="w-2 h-4 bg-stellar-mint rounded-full animate-bounce mt-3"></div>
                         </div>
                     </div>

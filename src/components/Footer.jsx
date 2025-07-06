@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Globe, Plane, Train, Bus, Car } from 'lucide-react
 
 const Footer = ({ lenis }) => {
     const scrollToTop = () => {
-        lenis?.scrollTo('top', { duration: 2 });
+        lenis?.scrollTo(0, { duration: 2 });
     };
 
     const contactInfo = [
