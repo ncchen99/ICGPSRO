@@ -22,8 +22,8 @@ const Footer = ({ lenis }) => {
         {
             icon: Phone,
             label: "Phone",
-            value: "+1 (303) 497-2694",
-            link: "tel:+13034972694"
+            value: "+886-6-2757575",
+            link: "tel:+886-6-2757575"
         }
     ];
 
