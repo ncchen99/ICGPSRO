@@ -50,25 +50,25 @@ const Join = () => {
     const keyDates = [
         {
             label: "Early Bird Registration",
-            date: "August 15, 2023",
+            date: "August 15, 2025",
             status: "ended",
             discount: "Save $100"
         },
         {
             label: "Regular Registration",
-            date: "September 30, 2023",
+            date: "September 30, 2025",
             status: "active",
             discount: "Standard rates"
         },
         {
             label: "Late Registration",
-            date: "October 20, 2023",
+            date: "October 20, 2025",
             status: "upcoming",
             discount: "+$75 late fee"
         },
         {
             label: "Conference Dates",
-            date: "October 30 - November 3, 2023",
+            date: "October 30 - November 3, 2025",
             status: "event",
             discount: "Taipei, Taiwan"
         }
@@ -108,7 +108,7 @@ const Join = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cosmic-white mb-6">
-                        Join <span className="nebula-text">ICGPSRO 2023</span>
+                        Join <span className="nebula-text">ICGPSRO 2025</span>
                     </h2>
                     <div className="section-divider max-w-md mx-auto"></div>
                     <p className="font-space text-xl text-stellar-mint max-w-4xl mx-auto leading-relaxed">
@@ -163,7 +163,7 @@ const Join = () => {
                             </ul>
 
                             <button
-                                onClick={() => window.open('https://forms.google.com/icgpsro2023', '_blank')}
+                                onClick={() => window.open('https://forms.google.com/icgpsro2025', '_blank')}
                                 className="cosmic-button w-full py-4 rounded-full font-semibold font-space text-lg relative z-20 cursor-pointer"
                             >
                                 <span className="relative z-10">Select Plan</span>
@@ -279,7 +279,7 @@ const Join = () => {
 
                         <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
                             <button
-                                onClick={() => window.open('https://forms.google.com/icgpsro2023', '_blank')}
+                                onClick={() => window.open('https://forms.google.com/icgpsro2025', '_blank')}
                                 className="cosmic-button px-8 py-4 rounded-full font-semibold font-space text-lg w-full sm:w-auto relative z-20 cursor-pointer"
                             >
                                 <span className="relative z-10">Register Now</span>
@@ -288,8 +288,8 @@ const Join = () => {
                                 onClick={() => {
                                     // 創建一個下載鏈接
                                     const link = document.createElement('a');
-                                    link.href = '/brochure/ICGPSRO2023-Brochure.pdf';
-                                    link.download = 'ICGPSRO2023-Brochure.pdf';
+                                    link.href = '/brochure/ICGPSRO2025-Brochure.pdf';
+                                    link.download = 'ICGPSRO2025-Brochure.pdf';
                                     document.body.appendChild(link);
                                     link.click();
                                     document.body.removeChild(link);

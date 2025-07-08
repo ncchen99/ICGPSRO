@@ -10,7 +10,7 @@ const FAQ = () => {
             category: "Registration & Participation",
             questions: [
                 {
-                    question: "Who can attend ICGPSRO 2023?",
+                    question: "Who can attend ICGPSRO 2025?",
                     answer: "The conference is open to researchers, scientists, students, and industry professionals working in or interested in GPS Radio Occultation, atmospheric sciences, space weather, and related fields. We welcome participants from academia, government agencies, and private sector organizations."
                 },
                 {
@@ -53,7 +53,7 @@ const FAQ = () => {
             questions: [
                 {
                     question: "Where is the conference being held?",
-                    answer: "ICGPSRO 2023 is being held in Taipei, Taiwan, from October 30 to November 3, 2023. The venue is at a modern conference center with state-of-the-art facilities and excellent accessibility."
+                    answer: "ICGPSRO 2025 is being held in Taipei, Taiwan, from October 30 to November 3, 2025. The venue is at a modern conference center with state-of-the-art facilities and excellent accessibility."
                 },
                 {
                     question: "Do I need a visa to travel to Taiwan?",
@@ -112,7 +112,7 @@ const FAQ = () => {
                     </h2>
                     <div className="w-24 h-1 bg-cosmic-teal mx-auto mb-8"></div>
                     <p className="font-space text-xl text-dark-space max-w-4xl mx-auto leading-relaxed">
-                        Find answers to common questions about ICGPSRO 2023
+                        Find answers to common questions about ICGPSRO 2025
                     </p>
                 </motion.div>
 

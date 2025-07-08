@@ -92,7 +92,7 @@ const Footer = ({ lenis }) => {
                         <div className="space-y-4">
                             <div className="flex items-center space-x-3">
                                 <div className="w-3 h-3 bg-cosmic-teal rounded-full animate-pulse"></div>
-                                <span className="font-space text-cosmic-white">October 30 - November 3, 2023</span>
+                                <span className="font-space text-cosmic-white">October 30 - November 3, 2025</span>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <div className="w-3 h-3 bg-stellar-mint rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
@@ -260,7 +260,7 @@ const Footer = ({ lenis }) => {
                     <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
                         <div className="flex items-center space-x-6">
                             <p className="font-space text-cosmic-white text-sm">
-                                © 2023 ICGPSRO Conference. All rights reserved.
+                                © 2025 ICGPSRO Conference. All rights reserved.
                             </p>
                         </div>
 

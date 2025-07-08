@@ -80,7 +80,7 @@ const ConferenceIntro = ({ lenis }) => {
                     </h2>
                     <div className="w-32 h-1 bg-cosmic-teal mx-auto mb-12"></div>
                     <p className="font-space text-lg sm:text-xl md:text-2xl lg:text-3xl text-dark-space max-w-5xl mx-auto leading-relaxed font-light">
-                        ICGPSRO 2023 brings together the global community to advance GPS Radio Occultation
+                        ICGPSRO 2025 brings together the global community to advance GPS Radio Occultation
                         and GNSS-based remote sensing for atmospheric and space sciences.
                     </p>
                 </motion.div>

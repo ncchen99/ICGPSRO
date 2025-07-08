@@ -123,7 +123,7 @@ const Host = () => {
                 >
                     <div className="space-card framer-animated rounded-3xl p-8 max-w-4xl mx-auto">
                         <p className="font-space text-lg md:text-xl text-stellar-mint leading-relaxed">
-                            "ICGPSRO 2023 brings together the global community of researchers, scientists, and
+                            "ICGPSRO 2025 brings together the global community of researchers, scientists, and
                             industry professionals to advance the field of GPS Radio Occultation and its
                             applications in atmospheric and space sciences."
                         </p>

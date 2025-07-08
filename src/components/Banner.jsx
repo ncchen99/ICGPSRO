@@ -63,7 +63,7 @@ const Banner = ({ lenis }) => {
                         <div className="flex flex-col md:flex-row justify-center items-center gap-12 text-lg md:text-xl lg:text-2xl font-space">
                             <div className="flex items-center space-x-6">
                                 <div className="w-6 h-6 bg-cosmic-teal rounded-full"></div>
-                                <span className="text-cosmic-white">October 30 - November 3, 2023</span>
+                                <span className="text-cosmic-white">October 30 - November 3, 2025</span>
                             </div>
                             <div className="flex items-center space-x-6">
                                 <div className="w-6 h-6 bg-stellar-mint rounded-full"></div>
