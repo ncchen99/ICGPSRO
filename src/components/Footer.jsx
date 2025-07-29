@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Globe, Plane, Train, Bus, Car } from 'lucide-react';
+import { MapPin, Phone, Mail, Globe, Plane, Train, Bus, Car, PersonStanding } from 'lucide-react';
 
 const Footer = ({ lenis }) => {
     const scrollToTop = () => {
@@ -54,14 +54,14 @@ const Footer = ({ lenis }) => {
             details: "Direct service from Taipei to Tainan in 1.5 hours"
         },
         {
-            icon: Bus,
-            title: "Local Transportation",
-            details: "City buses and taxis available from Tainan Station"
+            icon: Train,
+            title: "Taiwan Railway",
+            details: "Direct service from HSR Tainan Station to NCKU in 30 minutes"
         },
         {
-            icon: Car,
-            title: "NCKU Campus Access",
-            details: "National Cheng Kung University, East District, Tainan"
+            icon: PersonStanding,
+            title: "By foot",
+            details: "Walking distance from Tainan Station to NCKU"
         }
     ];
 
