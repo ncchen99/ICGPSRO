@@ -46,24 +46,25 @@ const Footer = ({ lenis }) => {
         {
             icon: Plane,
             title: "Taoyuan International Airport (TPE)",
-            details: "1.5 hours by high speed rail from TPE to Tainan"
+            details: "International travelers typically arrive at TPE."
         },
         {
             icon: Train,
             title: "Taiwan High Speed Rail",
-            details: "Direct service from Taipei to Tainan in 1.5 hours"
+            details: "The High Speed Rail provides direct service from Taipei to Tainan in approximately 1.5 hours."
         },
         {
             icon: Train,
             title: "Taiwan Railway",
-            details: "Direct service from HSR Tainan Station to NCKU in 30 minutes"
+            details: "Take a local train from HSR Tainan Station to Tainan Main Station, which takes about 30 minutes."
         },
         {
             icon: PersonStanding,
-            title: "By foot",
-            details: "Walking distance from Tainan Station to NCKU"
+            title: "On Foot",
+            details: "National Cheng Kung University (NCKU) is within walking distance from Tainan Main Station."
         }
     ];
+
 
     return (
         <footer className="bg-gradient-to-b from-dark-space to-deep-space relative overflow-hidden">
