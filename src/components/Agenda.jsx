@@ -7,7 +7,7 @@ const Agenda = () => {
 
     const schedule = [
         {
-            date: "Monday, October 30",
+            date: "Monday, October 28",
             theme: "Opening & Foundations",
             sessions: [
                 {
@@ -26,10 +26,10 @@ const Agenda = () => {
                 },
                 {
                     time: "10:15 - 11:00",
-                    title: "Future Perspectives in GPS Radio Occultation",
+                    title: "Missions and Programs Overview",
                     type: "keynote",
-                    speaker: "Dr. Sarah Chen, NASA JPL",
-                    description: "Keynote presentation on the future of RO technology"
+                    speaker: "Taiwan Space Agency",
+                    description: "New missions and operations in GPS Radio Occultation"
                 },
                 {
                     time: "11:00 - 11:30",
@@ -40,10 +40,10 @@ const Agenda = () => {
                 },
                 {
                     time: "11:30 - 12:30",
-                    title: "RO Data Processing Techniques",
+                    title: "Retrieval Methodology and Science",
                     type: "session",
-                    speaker: "Multiple Speakers",
-                    description: "Latest advances in data processing methodologies"
+                    speaker: "Technical Panel",
+                    description: "Advanced data processing and retrieval techniques"
                 },
                 {
                     time: "12:30 - 14:00",
@@ -54,10 +54,10 @@ const Agenda = () => {
                 },
                 {
                     time: "14:00 - 15:30",
-                    title: "Quality Control and Validation",
+                    title: "Numerical Weather Prediction Data Assimilation",
                     type: "session",
-                    speaker: "Technical Panel",
-                    description: "Ensuring data quality and validation procedures"
+                    speaker: "Research Teams",
+                    description: "Advances and validation studies in NWP"
                 },
                 {
                     time: "15:30 - 16:00",
@@ -71,27 +71,27 @@ const Agenda = () => {
                     title: "Student Poster Session I",
                     type: "poster",
                     speaker: "Student Participants",
-                    description: "Undergraduate and graduate student research presentations"
+                    description: "Research presentations by students"
                 }
             ]
         },
         {
-            date: "Tuesday, October 31",
-            theme: "Weather & Climate Applications",
+            date: "Tuesday, October 29",
+            theme: "Atmospheric Physics & Space Weather",
             sessions: [
                 {
                     time: "09:00 - 09:45",
-                    title: "GNSS Applications in Space Weather Monitoring",
+                    title: "Atmospheric Physics and Climate Applications",
                     type: "keynote",
-                    speaker: "Prof. Michael Torres, ESA",
-                    description: "Ionospheric studies and space weather applications"
+                    speaker: "International Experts",
+                    description: "Climate monitoring and atmospheric studies"
                 },
                 {
                     time: "09:45 - 11:00",
-                    title: "Numerical Weather Prediction",
+                    title: "Space Weather Applications",
                     type: "session",
-                    speaker: "Meteorological Panel",
-                    description: "Integration of RO data in weather forecasting models"
+                    speaker: "Space Weather Panel",
+                    description: "GNSS applications for space weather monitoring"
                 },
                 {
                     time: "11:00 - 11:30",
@@ -102,10 +102,10 @@ const Agenda = () => {
                 },
                 {
                     time: "11:30 - 12:30",
-                    title: "Data Assimilation Techniques",
+                    title: "GNSS-Reflectometry Session",
                     type: "session",
-                    speaker: "Dr. Anna Kowalski",
-                    description: "Advanced methods for incorporating RO data"
+                    speaker: "GNSS-R Experts",
+                    description: "Surface studies and ocean applications"
                 },
                 {
                     time: "12:30 - 14:00",
@@ -116,10 +116,10 @@ const Agenda = () => {
                 },
                 {
                     time: "14:00 - 15:30",
-                    title: "Climate Monitoring Applications",
+                    title: "Innovative GNSS Technologies",
                     type: "session",
-                    speaker: "Climate Research Group",
-                    description: "Long-term climate studies using RO data"
+                    speaker: "Technology Innovators",
+                    description: "Cutting-edge GNSS technologies and applications"
                 },
                 {
                     time: "15:30 - 16:00",
@@ -130,85 +130,23 @@ const Agenda = () => {
                 },
                 {
                     time: "16:00 - 17:00",
-                    title: "Industry Panel Discussion",
-                    type: "panel",
-                    speaker: "Industry Leaders",
-                    description: "Commercial applications and future opportunities"
-                }
-            ]
-        },
-        {
-            date: "Wednesday, November 1",
-            theme: "Technical Innovations",
-            sessions: [
-                {
-                    time: "09:00 - 09:45",
-                    title: "Regional Climate Monitoring Using RO Data",
-                    type: "keynote",
-                    speaker: "Dr. Liu Wei, Taiwan Space Agency",
-                    description: "Regional climate applications and case studies"
-                },
-                {
-                    time: "09:45 - 11:00",
-                    title: "GNSS Reflectometry Applications",
-                    type: "session",
-                    speaker: "Remote Sensing Team",
-                    description: "Surface studies and ocean applications"
-                },
-                {
-                    time: "11:00 - 11:30",
-                    title: "Coffee Break",
-                    type: "break",
-                    speaker: "",
-                    description: "Networking break"
-                },
-                {
-                    time: "11:30 - 12:30",
-                    title: "Emerging Technologies Session",
-                    type: "session",
-                    speaker: "Technology Innovators",
-                    description: "Latest technological developments in GNSS"
-                },
-                {
-                    time: "12:30 - 14:00",
-                    title: "Conference Lunch",
-                    type: "break",
-                    speaker: "",
-                    description: "Sponsored lunch with networking"
-                },
-                {
-                    time: "14:00 - 15:30",
                     title: "Technical Workshop",
                     type: "workshop",
-                    speaker: "UCAR COSMIC Team",
+                    speaker: "Technical Experts",
                     description: "Hands-on workshop on data processing tools"
-                },
-                {
-                    time: "15:30 - 16:00",
-                    title: "Break",
-                    type: "break",
-                    speaker: "",
-                    description: "Refreshment break"
-                },
-                {
-                    time: "16:00 - 17:30",
-                    title: "Student Poster Session II",
-                    type: "poster",
-                    speaker: "Student Participants",
-                    description: "Second student poster presentation session"
                 },
                 {
                     time: "19:00 - 22:00",
                     title: "Conference Dinner",
                     type: "social",
                     speaker: "",
-                    description: "Formal dinner at Taipei 101 with cultural program"
+                    description: "Traditional Tainan cuisine experience"
                 }
             ]
         },
         {
-            date: "Thursday, November 2",
-            theme: "International Collaboration",
+            date: "Wednesday, October 30",
+            theme: "Future Directions & Collaboration",
             sessions: [
                 {
                     time: "09:00 - 10:30",
@@ -247,10 +185,10 @@ const Agenda = () => {
                 },
                 {
                     time: "14:00 - 15:30",
-                    title: "Breakout Sessions",
-                    type: "breakout",
-                    speaker: "Working Groups",
-                    description: "Specialized topic discussions in small groups"
+                    title: "Synthesis and Future Directions",
+                    type: "synthesis",
+                    speaker: "Conference Chairs",
+                    description: "Summary of key findings and future research directions"
                 },
                 {
                     time: "15:30 - 16:00",
@@ -261,51 +199,10 @@ const Agenda = () => {
                 },
                 {
                     time: "16:00 - 17:00",
-                    title: "Synthesis and Future Directions",
-                    type: "synthesis",
-                    speaker: "Conference Chairs",
-                    description: "Summary of key findings and future research directions"
-                }
-            ]
-        },
-        {
-            date: "Friday, November 3",
-            theme: "Closing & Cultural Experience",
-            sessions: [
-                {
-                    time: "09:00 - 10:30",
-                    title: "Final Technical Sessions",
-                    type: "session",
-                    speaker: "Selected Speakers",
-                    description: "Final technical presentations and discussions"
-                },
-                {
-                    time: "10:30 - 11:00",
-                    title: "Coffee Break",
-                    type: "break",
-                    speaker: "",
-                    description: "Final networking break"
-                },
-                {
-                    time: "11:00 - 12:00",
                     title: "Closing Ceremony",
                     type: "closing",
                     speaker: "Conference Organizers",
                     description: "Conference wrap-up and closing remarks"
-                },
-                {
-                    time: "12:00 - 13:30",
-                    title: "Farewell Lunch",
-                    type: "break",
-                    speaker: "",
-                    description: "Final networking and farewells"
-                },
-                {
-                    time: "14:00 - 18:00",
-                    title: "Cultural Tour (Optional)",
-                    type: "cultural",
-                    speaker: "Local Guides",
-                    description: "Taipei cultural sites and traditional markets"
                 }
             ]
         }
@@ -367,7 +264,7 @@ const Agenda = () => {
                     </h2>
                     <div className="w-24 h-1 bg-cosmic-teal mx-auto mb-8"></div>
                     <p className="font-space text-xl text-dark-space max-w-4xl mx-auto leading-relaxed">
-                        Five days of intensive scientific exchange, networking, and exploration
+                        Three days of intensive scientific exchange, networking, and exploration in Tainan
                     </p>
                 </motion.div>
 
@@ -468,7 +365,7 @@ const Agenda = () => {
                         </div>
                         <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Sessions</h4>
                         <p className="font-space text-dark-space opacity-80">
-                            35+ technical sessions covering all aspects of GPS RO
+                            20+ technical sessions covering all aspects of GPS RO
                         </p>
                     </div>
                     <div className="text-center p-6 bg-gradient-to-br from-stellar-mint/5 to-cosmic-teal/5 rounded-xl">
@@ -484,9 +381,9 @@ const Agenda = () => {
                         <div className="mb-4 flex justify-center">
                             <Calendar className="w-10 h-10 text-cosmic-teal" />
                         </div>
-                        <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Students</h4>
+                        <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Free Attendance</h4>
                         <p className="font-space text-dark-space opacity-80">
-                            Special programs and awards for student participants
+                            No registration fees for all participants
                         </p>
                     </div>
                 </motion.div>

@@ -1,76 +1,31 @@
 import { motion } from 'framer-motion';
-import { User, GraduationCap, Monitor, Star, Users, BookOpen, Award, Rocket, Clock, CheckCircle, Calendar, Timer } from 'lucide-react';
+import { User, GraduationCap, Monitor, Star, Users, BookOpen, Award, Rocket, Clock, CheckCircle, Calendar, Timer, FileText, Download } from 'lucide-react';
 
 const Join = () => {
-    const registrationOptions = [
-        {
-            title: "Regular Registration",
-            price: "$450",
-            includes: [
-                "All conference sessions",
-                "Welcome reception",
-                "Coffee breaks & lunch",
-                "Conference proceedings",
-                "Certificate of attendance",
-                "Networking opportunities"
-            ],
-            icon: User,
-            popular: false
-        },
-        {
-            title: "Student Registration",
-            price: "$200",
-            includes: [
-                "All conference sessions",
-                "Student poster sessions",
-                "Mentorship program",
-                "Student networking events",
-                "Conference proceedings",
-                "Certificate of attendance"
-            ],
-            icon: GraduationCap,
-            popular: true
-        },
-        {
-            title: "Virtual Participation",
-            price: "$150",
-            includes: [
-                "Live streaming access",
-                "Virtual networking platform",
-                "Digital proceedings",
-                "Recorded session access",
-                "Virtual exhibition hall",
-                "Digital certificate"
-            ],
-            icon: Monitor,
-            popular: false
-        }
-    ];
-
     const keyDates = [
         {
-            label: "Early Bird Registration",
-            date: "August 15, 2025",
-            status: "ended",
-            discount: "Save $100"
-        },
-        {
-            label: "Regular Registration",
-            date: "September 30, 2025",
-            status: "active",
-            discount: "Standard rates"
-        },
-        {
-            label: "Late Registration",
-            date: "October 20, 2025",
+            label: "Abstract Submission Opens",
+            date: "Spring 2025",
             status: "upcoming",
-            discount: "+$75 late fee"
+            discount: "Call for papers"
+        },
+        {
+            label: "Registration Opens",
+            date: "Summer 2025",
+            status: "upcoming",
+            discount: "Free registration"
+        },
+        {
+            label: "Abstract Deadline",
+            date: "September 2025",
+            status: "upcoming",
+            discount: "Submit your research"
         },
         {
             label: "Conference Dates",
-            date: "October 30 - November 3, 2025",
+            date: "28-30 October 2025",
             status: "event",
-            discount: "Taipei, Taiwan"
+            discount: "Tainan, Taiwan"
         }
     ];
 
@@ -112,64 +67,35 @@ const Join = () => {
                     </h2>
                     <div className="section-divider max-w-md mx-auto"></div>
                     <p className="font-space text-xl text-stellar-mint max-w-4xl mx-auto leading-relaxed">
-                        Secure your place at the premier international conference on GPS Radio Occultation
+                        Free registration for the premier international conference on GPS Radio Occultation in Tainan, Taiwan
                     </p>
                 </motion.div>
 
-                {/* Registration options */}
+                {/* Registration Information */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20"
+                    className="text-center mb-20"
                 >
-                    {registrationOptions.map((option, index) => (
-                        <motion.div
-                            key={option.title}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: index * 0.2 }}
-                            viewport={{ once: true }}
-                            className={`space-card framer-animated rounded-3xl p-8 text-center relative ${option.popular ? 'cosmic-glow ring-2 ring-cosmic-teal' : ''
-                                } hover:cosmic-glow transition-all duration-500`}
-                            whileHover={{ scale: 1.02 }}
-                        >
-                            {option.popular && (
-                                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                                    <span className="bg-cosmic-teal text-white px-6 py-2 rounded-full font-space font-bold text-sm">
-                                        MOST POPULAR
-                                    </span>
-                                </div>
-                            )}
-
-                            <div className="mb-6 flex justify-center">
-                                <option.icon className="w-16 h-16 text-cosmic-teal" />
-                            </div>
-                            <h3 className="font-chaney text-lg sm:text-xl md:text-2xl text-cosmic-white mb-4">
-                                {option.title}
-                            </h3>
-                            <div className="text-lg sm:text-xl md:text-2xl font-chaney text-cosmic-teal mb-6">
-                                {option.price}
-                            </div>
-
-                            <ul className="space-y-3 mb-8 text-left">
-                                {option.includes.map((item, itemIndex) => (
-                                    <li key={itemIndex} className="flex items-start space-x-3">
-                                        <div className="w-2 h-2 bg-stellar-mint rounded-full mt-2 flex-shrink-0"></div>
-                                        <span className="font-space text-cosmic-white">{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <button
-                                onClick={() => window.open('https://forms.google.com/icgpsro2025', '_blank')}
-                                className="cosmic-button w-full py-4 rounded-full font-semibold font-space text-lg relative z-20 cursor-pointer"
-                            >
-                                <span className="relative z-10">Select Plan</span>
-                            </button>
-                        </motion.div>
-                    ))}
+                    <div className="space-card framer-animated rounded-3xl p-12 max-w-4xl mx-auto">
+                        <div className="mb-6 flex justify-center">
+                            <Rocket className="w-16 h-16 text-cosmic-teal" />
+                        </div>
+                        <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-white mb-8">
+                            Registration Information
+                        </h3>
+                        <div className="space-y-6 text-stellar-mint font-space text-lg leading-relaxed">
+                            <p>
+                                A meeting website will soon be opened for registrations and abstract submissions.
+                                We will keep you updated.
+                            </p>
+                            <p className="text-cosmic-teal font-medium italic">
+                                Looking forward to seeing you in Tainan, Taiwan.
+                            </p>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* Key dates timeline */}
@@ -254,60 +180,6 @@ const Join = () => {
                                 </motion.div>
                             );
                         })}
-                    </div>
-                </motion.div>
-
-                {/* Registration CTA */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: true }}
-                    className="text-center"
-                >
-                    <div className="space-card framer-animated rounded-3xl p-12 max-w-4xl mx-auto">
-                        <div className="mb-6 flex justify-center">
-                            <Rocket className="w-16 h-16 text-cosmic-teal" />
-                        </div>
-                        <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-white mb-6">
-                            Ready to <span className="text-cosmic-teal">Launch</span> Your Journey?
-                        </h3>
-                        <p className="font-space text-lg text-stellar-mint mb-8 leading-relaxed">
-                            Don't miss this opportunity to be part of the global GPS Radio Occultation community.
-                            Register now and join us in Taipei for an unforgettable scientific experience.
-                        </p>
-
-                        <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
-                            <button
-                                onClick={() => window.open('https://forms.google.com/icgpsro2025', '_blank')}
-                                className="cosmic-button px-8 py-4 rounded-full font-semibold font-space text-lg w-full sm:w-auto relative z-20 cursor-pointer"
-                            >
-                                <span className="relative z-10">Register Now</span>
-                            </button>
-                            <button
-                                onClick={() => {
-                                    // 創建一個下載鏈接
-                                    const link = document.createElement('a');
-                                    link.href = '/brochure/ICGPSRO2025-Brochure.pdf';
-                                    link.download = 'ICGPSRO2025-Brochure.pdf';
-                                    document.body.appendChild(link);
-                                    link.click();
-                                    document.body.removeChild(link);
-                                }}
-                                className="px-8 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg w-full sm:w-auto relative z-20 cursor-pointer"
-                            >
-                                Download Brochure
-                            </button>
-                        </div>
-
-                        <div className="mt-8 pt-6 border-t border-cosmic-teal/20">
-                            <p className="font-space text-cosmic-white text-sm">
-                                <span className="text-cosmic-teal font-semibold">Contact:</span> cosmic-websites@ucar.edu
-                            </p>
-                            <p className="font-space text-stellar-mint text-xs mt-2">
-                                For questions about registration, accommodations, or student programs
-                            </p>
-                        </div>
                     </div>
                 </motion.div>
             </div>

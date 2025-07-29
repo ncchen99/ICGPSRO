@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import FORMOSAT7Image from '../assets/images/FORMOSAT-7.png';
+import TRITONImage from '../assets/images/TRITON.png';
 
 const Banner = ({ lenis }) => {
     const scrollToAgenda = () => {
@@ -19,6 +21,46 @@ const Banner = ({ lenis }) => {
                 <div className="absolute top-40 right-32 w-1 h-1 bg-stellar-mint rounded-full animate-twinkle opacity-40" style={{ animationDelay: '1s' }}></div>
                 <div className="absolute bottom-32 left-1/3 w-1.5 h-1.5 bg-cosmic-white rounded-full animate-twinkle opacity-40" style={{ animationDelay: '2s' }}></div>
             </div>
+
+            {/* Floating satellite images - Made larger */}
+            <motion.div
+                className="absolute top-16 right-8 w-48 h-48 md:w-56 md:h-56 opacity-25 z-5"
+                animate={{
+                    y: [-10, 10, -10],
+                    rotate: [0, 5, -5, 0],
+                }}
+                transition={{
+                    duration: 6,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                }}
+            >
+                <img
+                    src={FORMOSAT7Image}
+                    alt="FORMOSAT-7 Satellite"
+                    className="w-full h-full object-contain"
+                />
+            </motion.div>
+
+            <motion.div
+                className="absolute bottom-16 left-8 w-52 h-52 md:w-64 md:h-64 opacity-20 z-5"
+                animate={{
+                    y: [15, -15, 15],
+                    rotate: [0, -3, 3, 0],
+                }}
+                transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 2
+                }}
+            >
+                <img
+                    src={TRITONImage}
+                    alt="TRITON Satellite"
+                    className="w-full h-full object-contain"
+                />
+            </motion.div>
 
             {/* Main content container */}
             <div className="relative z-10 w-full max-w-7xl mx-auto">
@@ -47,7 +89,7 @@ const Banner = ({ lenis }) => {
                             className="space-y-8 mb-16 px-8"
                         >
                             <h2 className="font-space text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-stellar-mint font-light leading-relaxed">
-                                International Conference on GPS Radio Occultation
+                                7th International Conference on GPS Radio Occultation
                             </h2>
                         </motion.div>
                     </motion.div>
@@ -63,18 +105,18 @@ const Banner = ({ lenis }) => {
                         <div className="flex flex-col md:flex-row justify-center items-center gap-12 text-lg md:text-xl lg:text-2xl font-space">
                             <div className="flex items-center space-x-6">
                                 <div className="w-6 h-6 bg-cosmic-teal rounded-full"></div>
-                                <span className="text-cosmic-white">October 30 - November 3, 2025</span>
+                                <span className="text-cosmic-white">28-30 October 2025</span>
                             </div>
                             <div className="flex items-center space-x-6">
                                 <div className="w-6 h-6 bg-stellar-mint rounded-full"></div>
-                                <span className="text-cosmic-white">Taipei, Taiwan</span>
+                                <span className="text-cosmic-white">National Cheng Kung University, Tainan, Taiwan</span>
                             </div>
                         </div>
 
                         {/* Description */}
                         <div className="max-w-4xl mx-auto px-8">
                             <p className="text-lg md:text-xl lg:text-2xl text-stellar-mint leading-relaxed font-space font-light text-center">
-                                Advancing GNSS-based remote sensing for weather, climate, and space weather applications
+                                Advancing GNSS-based remote sensing for meteorology, climate, and space science applications
                             </p>
                         </div>
                     </motion.div>

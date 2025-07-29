@@ -11,19 +11,19 @@ const FAQ = () => {
             questions: [
                 {
                     question: "Who can attend ICGPSRO 2025?",
-                    answer: "The conference is open to researchers, scientists, students, and industry professionals working in or interested in GPS Radio Occultation, atmospheric sciences, space weather, and related fields. We welcome participants from academia, government agencies, and private sector organizations."
+                    answer: "The conference is open to researchers, scientists, students, and industry professionals working in or interested in GPS Radio Occultation, atmospheric sciences, space weather, and related fields. We welcome participants from academia, government agencies, and private sector organizations worldwide."
                 },
                 {
-                    question: "What is included in the registration fee?",
-                    answer: "Registration includes access to all conference sessions, welcome reception, coffee breaks, lunches, conference proceedings, networking events, and a certificate of attendance. Student registration also includes mentorship programs and special student events."
+                    question: "Is there a registration fee?",
+                    answer: "No, ICGPSRO 2025 is completely free to attend! There are no registration fees for any participants, whether attending in person or virtually. This includes access to all sessions, materials, and networking opportunities."
                 },
                 {
                     question: "Is there a virtual participation option?",
-                    answer: "Yes, we offer virtual participation for $150 which includes live streaming access, virtual networking platform, digital proceedings, recorded session access, and a digital certificate. This option is perfect for those unable to travel to Taipei."
+                    answer: "Yes, we offer virtual participation options including live streaming access, virtual networking platform, digital proceedings, recorded session access, and a digital certificate. This option is also free of charge."
                 },
                 {
-                    question: "Are there scholarships available for students?",
-                    answer: "Yes, limited scholarships are available for qualified students, particularly those from developing countries or underrepresented groups. Applications are reviewed on a case-by-case basis. Contact cosmic-websites@ucar.edu for more information."
+                    question: "How do I register for the conference?",
+                    answer: "A meeting website will soon be opened for registrations and abstract submissions. We will keep you updated through this website and official announcements from the organizing committee."
                 }
             ]
         },
@@ -32,11 +32,11 @@ const FAQ = () => {
             questions: [
                 {
                     question: "What topics will be covered at the conference?",
-                    answer: "The conference covers GPS Radio Occultation data processing, weather prediction, climate monitoring, ionospheric studies, GNSS reflectometry, emerging technologies, and future mission planning. Sessions include keynotes, technical presentations, workshops, and panel discussions."
+                    answer: "The conference will address seven main topics: (1) Missions and programs, (2) Retrieval methodology and science, (3) Numerical weather prediction data assimilation advances, (4) Atmospheric physics and climate, (5) Space weather, (6) GNSS-Reflectometry, and (7) Innovative GNSS technologies."
                 },
                 {
                     question: "Can I present my research at the conference?",
-                    answer: "Yes, we encourage research presentations through oral sessions and poster presentations. Students have dedicated poster sessions and opportunities for oral presentations. Abstract submission guidelines are available on our website."
+                    answer: "Yes, we encourage research presentations through oral sessions and poster presentations. Abstract submission guidelines will be available when the conference website opens. Both students and professionals are welcome to submit their research."
                 },
                 {
                     question: "Will conference proceedings be published?",
@@ -44,7 +44,7 @@ const FAQ = () => {
                 },
                 {
                     question: "Are there hands-on workshops or tutorials?",
-                    answer: "Yes, we offer technical workshops on data processing tools, software tutorials, and hands-on sessions with GNSS data. These sessions are designed to provide practical skills and enhance learning opportunities."
+                    answer: "Yes, we plan to offer technical workshops on data processing tools, software tutorials, and hands-on sessions with GNSS data. These sessions are designed to provide practical skills and enhance learning opportunities."
                 }
             ]
         },
@@ -53,7 +53,7 @@ const FAQ = () => {
             questions: [
                 {
                     question: "Where is the conference being held?",
-                    answer: "ICGPSRO 2025 is being held in Taipei, Taiwan, from October 30 to November 3, 2025. The venue is at a modern conference center with state-of-the-art facilities and excellent accessibility."
+                    answer: "ICGPSRO 2025 is being held at the National Cheng Kung University in Tainan, Taiwan, from 28-30 October 2025. This is the first time the conference will be hosted in Tainan, the first capital of Taiwan, only 1.5 hours from Taipei by high speed rail."
                 },
                 {
                     question: "Do I need a visa to travel to Taiwan?",
@@ -61,11 +61,11 @@ const FAQ = () => {
                 },
                 {
                     question: "Are there recommended hotels near the venue?",
-                    answer: "Yes, we have partnered with several hotels offering special conference rates. A list of recommended accommodations with booking information will be provided to registered participants. Early booking is advised due to limited availability."
+                    answer: "Yes, we will provide a list of recommended accommodations near National Cheng Kung University with information about booking. Tainan offers various accommodation options from budget to luxury hotels. Details will be available when registration opens."
                 },
                 {
-                    question: "What is the weather like in Taipei during the conference?",
-                    answer: "Late October to early November in Taipei features mild and pleasant weather with temperatures ranging from 20-26°C (68-79°F). It's generally sunny with occasional rain showers. We recommend bringing light layers and a light rain jacket."
+                    question: "What is the weather like in Tainan during the conference?",
+                    answer: "Late October in Tainan features pleasant weather with temperatures ranging from 22-28°C (72-82°F). It's generally sunny with occasional rain showers. We recommend bringing light layers and a light rain jacket. The weather is ideal for exploring the historic city."
                 }
             ]
         },
@@ -82,11 +82,11 @@ const FAQ = () => {
                 },
                 {
                     question: "How can I stay updated on conference announcements?",
-                    answer: "Regular updates are sent to registered participants via email. You can also follow our website and social media channels for the latest announcements, program updates, and important information."
+                    answer: "Updates will be posted on this website and sent to registered participants via email. Follow our official announcements for the latest information about the program, speakers, and important deadlines."
                 },
                 {
                     question: "Is there support for first-time conference attendees?",
-                    answer: "Yes, we provide orientation sessions for first-time attendees, mentorship programs pairing newcomers with experienced researchers, and dedicated support staff to help navigate the conference program and activities."
+                    answer: "Yes, we provide orientation information for first-time attendees and welcome opportunities for newcomers to connect with experienced researchers. The organizing committee and volunteers will be available to help navigate the conference program and activities."
                 }
             ]
         }
@@ -112,7 +112,7 @@ const FAQ = () => {
                     </h2>
                     <div className="w-24 h-1 bg-cosmic-teal mx-auto mb-8"></div>
                     <p className="font-space text-xl text-dark-space max-w-4xl mx-auto leading-relaxed">
-                        Find answers to common questions about ICGPSRO 2025
+                        Find answers to common questions about ICGPSRO 2025 in Tainan, Taiwan
                     </p>
                 </motion.div>
 
@@ -199,19 +199,19 @@ const FAQ = () => {
                             Still Have <span className="text-stellar-mint">Questions</span>?
                         </h3>
                         <p className="font-space text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Our team is here to help! Don't hesitate to reach out for any additional
+                            Our organizing committee is here to help! Don't hesitate to reach out for any additional
                             information about the conference, registration, or travel arrangements.
                         </p>
 
                         <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
                             <button
-                                onClick={() => window.open('mailto:cosmic-websites@ucar.edu', '_blank')}
+                                onClick={() => window.open('#contact', '_blank')}
                                 className="cosmic-button px-8 py-4 rounded-full font-semibold font-space text-lg w-full sm:w-auto"
                             >
-                                <span className="relative z-10">Contact Us</span>
+                                <span className="relative z-10">Contact Organizers</span>
                             </button>
                             <button className="px-8 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg w-full sm:w-auto">
-                                Download FAQ PDF
+                                Download Information
                             </button>
                         </div>
 
@@ -222,8 +222,8 @@ const FAQ = () => {
                                         <Mail className="w-6 h-6 text-stellar-mint" />
                                     </div>
                                     <p className="font-space text-sm">
-                                        <span className="font-semibold">Email:</span><br />
-                                        cosmic-websites@ucar.edu
+                                        <span className="font-semibold">Contact:</span><br />
+                                        Organizing Committee
                                     </p>
                                 </div>
                                 <div>
@@ -231,8 +231,8 @@ const FAQ = () => {
                                         <Clock className="w-6 h-6 text-stellar-mint" />
                                     </div>
                                     <p className="font-space text-sm">
-                                        <span className="font-semibold">Response Time:</span><br />
-                                        24-48 hours
+                                        <span className="font-semibold">Conference Dates:</span><br />
+                                        28-30 October 2025
                                     </p>
                                 </div>
                                 <div>
@@ -240,8 +240,8 @@ const FAQ = () => {
                                         <Globe className="w-6 h-6 text-stellar-mint" />
                                     </div>
                                     <p className="font-space text-sm">
-                                        <span className="font-semibold">Support:</span><br />
-                                        Multiple Languages
+                                        <span className="font-semibold">Location:</span><br />
+                                        Tainan, Taiwan
                                     </p>
                                 </div>
                             </div>

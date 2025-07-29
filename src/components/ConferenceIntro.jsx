@@ -5,33 +5,34 @@ const ConferenceIntro = ({ lenis }) => {
     const highlights = [
         {
             icon: Satellite,
-            title: "GNSS Technology",
-            description: "Advanced GPS Radio Occultation techniques and applications"
+            title: "Missions & Programs",
+            description: "New missions and operations in GPS Radio Occultation"
         },
         {
             icon: Globe,
-            title: "Weather & Climate",
-            description: "Atmospheric observations for meteorological and climatological research"
+            title: "Retrieval Methodology",
+            description: "Advanced science and data processing techniques"
         },
         {
             icon: Star,
             title: "Space Weather",
-            description: "Ionospheric monitoring and space environment characterization"
+            description: "GNSS applications for space weather monitoring"
         },
         {
             icon: Microscope,
-            title: "Scientific Innovation",
-            description: "Cutting-edge research methodologies and data processing techniques"
+            title: "Innovative GNSS",
+            description: "Cutting-edge GNSS technologies and applications"
         }
     ];
 
     const themes = [
-        "Radio Occultation Data Processing and Quality Control",
-        "Weather Prediction and Data Assimilation",
-        "Climate Monitoring and Long-term Trends",
-        "Ionospheric and Space Weather Applications",
-        "GNSS Reflectometry and Surface Studies",
-        "Emerging Technologies and Future Missions"
+        "Missions and programs (new missions and operations)",
+        "Retrieval methodology and science",
+        "Numerical weather prediction data assimilation advances and validation studies",
+        "Atmospheric physics and climate",
+        "Space weather",
+        "GNSS-Reflectometry",
+        "Innovative GNSS technologies"
     ];
 
     const containerVariants = {
@@ -74,14 +75,14 @@ const ConferenceIntro = ({ lenis }) => {
                     className="text-center mb-20"
                 >
                     <h2 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-dark-space mb-8 leading-tight">
-                        <span className="text-cosmic-teal">Exploring</span> the Future
+                        <span className="text-cosmic-teal">Advancing</span> GNSS Science
                         <br />
-                        <span className="text-dark-space">of Space Science</span>
+                        <span className="text-dark-space">in Taiwan</span>
                     </h2>
                     <div className="w-32 h-1 bg-cosmic-teal mx-auto mb-12"></div>
                     <p className="font-space text-lg sm:text-xl md:text-2xl lg:text-3xl text-dark-space max-w-5xl mx-auto leading-relaxed font-light">
-                        ICGPSRO 2025 brings together the global community to advance GPS Radio Occultation
-                        and GNSS-based remote sensing for atmospheric and space sciences.
+                        The 7th International Conference on GPS Radio Occultation addresses scientific progress
+                        of radio occultation missions and advanced GNSS technologies for meteorology, climate, and space science exploration.
                     </p>
                 </motion.div>
 
@@ -125,19 +126,18 @@ const ConferenceIntro = ({ lenis }) => {
                         className="space-y-8"
                     >
                         <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-dark-space mb-8 leading-tight">
-                            About <span className="text-cosmic-teal">ICGPSRO</span>
+                            About <span className="text-cosmic-teal">ICGPSRO 2025</span>
                         </h3>
                         <div className="space-y-8 font-space text-dark-space">
                             <p className="text-xl leading-relaxed font-light">
-                                The International Conference on GPS Radio Occultation focuses on GNSS-based
-                                remote sensing, including radio occultation and reflectometry, and their
-                                applications to weather, climate, and space weather science.
+                                We are pleased to announce the 7th International Conference on GPS Radio Occultation (ICGPSRO) 2025.
+                                The conference will be held on 28-30 October 2025 at the National Cheng Kung University, Tainan, Taiwan.
                             </p>
                             <p className="text-xl leading-relaxed font-light">
-                                As part of the Taiwan International Assembly of Space Science, Technology,
-                                and Industry (TASTI), this conference serves as a premier platform for
-                                researchers, scientists, and industry professionals to share cutting-edge
-                                developments and foster international collaboration.
+                                This is the first time we will host the conference in Tainan, the first capital of Taiwan,
+                                only 1.5 hours from Taipei by high speed rail. The conference will address the scientific
+                                progresses of radio occultation missions and advanced GNSS technologies for the exploration
+                                of meteorology, climate, and space science.
                             </p>
                         </div>
                     </motion.div>
@@ -150,7 +150,7 @@ const ConferenceIntro = ({ lenis }) => {
                         className="space-y-8"
                     >
                         <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-dark-space mb-8 leading-tight">
-                            Conference <span className="text-cosmic-teal">Themes</span>
+                            Conference <span className="text-cosmic-teal">Topics</span>
                         </h3>
                         <div className="space-y-6">
                             {themes.map((theme, index) => (
@@ -182,10 +182,10 @@ const ConferenceIntro = ({ lenis }) => {
                         <div className="absolute inset-0 bg-black opacity-10"></div>
                         <div className="relative z-10 space-y-8">
                             <h3 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-8 leading-tight">
-                                Ready to <span className="text-stellar-mint">Explore</span>?
+                                Join Us in <span className="text-stellar-mint">Tainan</span>
                             </h3>
                             <p className="font-space text-xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-                                Be part of the global community advancing GPS Radio Occultation science
+                                Be part of the global community advancing GPS Radio Occultation science in the historic city of Tainan
                             </p>
                             <div className="flex flex-col sm:flex-row gap-6 justify-center">
                                 <button
@@ -196,9 +196,9 @@ const ConferenceIntro = ({ lenis }) => {
                                 </button>
                                 <button
                                     className="px-10 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg hover:scale-105"
-                                    onClick={() => lenis?.scrollTo('#speakers', { duration: 2 })}
+                                    onClick={() => lenis?.scrollTo('#join', { duration: 2 })}
                                 >
-                                    Meet Speakers
+                                    Register Now
                                 </button>
                             </div>
                         </div>

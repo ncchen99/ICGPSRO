@@ -2,68 +2,62 @@ import { motion } from 'framer-motion';
 import { User, UserCheck, BarChart3, Users, Award, GraduationCap } from 'lucide-react';
 
 const Speakers = () => {
-    const keynoteJSpeakers = [
+    const organizingCommittee = [
         {
-            name: "Dr. Sarah Chen",
-            title: "Director of GNSS Research",
-            organization: "NASA Jet Propulsion Laboratory",
-            expertise: "Atmospheric Remote Sensing",
+            name: "Charles Lin",
+            title: "Conference Co-Chair",
+            organization: "Department of Earth Sciences, NCKU",
+            expertise: "Radio Occultation Applications",
             icon: User,
-            talk: "Future Perspectives in GPS Radio Occultation"
+            talk: "Local Organizing Committee Chair"
         },
         {
-            name: "Prof. Michael Torres",
-            title: "Chair of Space Physics",
-            organization: "European Space Agency",
-            expertise: "Ionospheric Studies",
+            name: "Jan-Peter Weiss",
+            title: "Conference Co-Chair",
+            organization: "UCAR COSMIC",
+            expertise: "GNSS Technology",
             icon: User,
-            talk: "GNSS Applications in Space Weather Monitoring"
+            talk: "International Program Committee Chair"
         },
         {
-            name: "Dr. Liu Wei",
-            title: "Lead Scientist",
-            organization: "Taiwan Space Agency",
-            expertise: "Climate Research",
+            name: "Vick Chu",
+            title: "Executive Vice Director",
+            organization: "Taiwan Space Agency (TASA)",
+            expertise: "Space Missions",
             icon: User,
-            talk: "Regional Climate Monitoring Using RO Data"
+            talk: "Mission Planning and Operations"
         }
     ];
 
-    const featuredSpeakers = [
+    const committeeMembers = [
         {
-            name: "Dr. Anna Kowalski",
-            organization: "UCAR COSMIC Program",
-            expertise: "Data Assimilation",
+            name: "Cheng-Yun Huang",
+            organization: "FORMOSAT-7/COSMIC-2 Program Director, TASA",
+            expertise: "Satellite Programs",
             icon: UserCheck
         },
         {
-            name: "Prof. James Rodriguez",
-            organization: "MIT Atmospheric Sciences",
-            expertise: "Numerical Weather Prediction",
+            name: "Wen-Hao Yeh",
+            organization: "TRITON Mission Program Director, TASA",
+            expertise: "Mission Development",
             icon: UserCheck
         },
         {
-            name: "Dr. Hiroshi Tanaka",
-            organization: "JAXA Earth Observation",
-            expertise: "Satellite Technology",
+            name: "Shu-Chih Yang",
+            organization: "Department of Atmospheric Sciences, NCU",
+            expertise: "Atmospheric Science",
             icon: UserCheck
         },
         {
-            name: "Dr. Emma Thompson",
-            organization: "MetOffice Research",
-            expertise: "Climate Modeling",
+            name: "Su-Ya Chen",
+            organization: "GPS-ARC, NCU",
+            expertise: "GPS Applications",
             icon: UserCheck
         },
         {
-            name: "Prof. Carlos Silva",
-            organization: "ESA Climate Office",
-            expertise: "Long-term Climate Records",
-            icon: UserCheck
-        },
-        {
-            name: "Dr. Priya Sharma",
-            organization: "ISRO Space Applications",
-            expertise: "Tropical Meteorology",
+            name: "Nick Pedatella",
+            organization: "NCAR HAO",
+            expertise: "Space Weather",
             icon: UserCheck
         }
     ];
@@ -101,15 +95,15 @@ const Speakers = () => {
                     className="text-center mb-12"
                 >
                     <h2 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cosmic-white mb-6">
-                        Distinguished <span className="nebula-text">Speakers</span>
+                        Organizing <span className="nebula-text">Committee</span>
                     </h2>
                     <div className="section-divider max-w-md mx-auto"></div>
                     <p className="font-space text-xl text-stellar-mint max-w-4xl mx-auto leading-relaxed">
-                        Learn from world-renowned experts in GPS Radio Occultation and atmospheric sciences
+                        Meet the dedicated team organizing ICGPSRO 2025 in Tainan, Taiwan
                     </p>
                 </motion.div>
 
-                {/* Keynote Speakers */}
+                {/* Conference Chairs */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -118,15 +112,15 @@ const Speakers = () => {
                     className="mb-16"
                 >
                     <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-teal text-center mb-8">
-                        Keynote Speakers
+                        Conference Chairs
                     </h3>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        {keynoteJSpeakers.map((speaker, index) => {
-                            const IconComponent = speaker.icon;
+                        {organizingCommittee.map((member, index) => {
+                            const IconComponent = member.icon;
                             return (
                                 <motion.div
-                                    key={speaker.name}
+                                    key={member.name}
                                     variants={itemVariants}
                                     initial="hidden"
                                     whileInView="visible"
@@ -140,22 +134,22 @@ const Speakers = () => {
                                             <IconComponent className="w-10 h-10 text-white" />
                                         </div>
                                         <div className="absolute -top-1 -right-1 w-6 h-6 bg-cosmic-teal rounded-full flex items-center justify-center">
-                                            <span className="text-white text-xs font-bold">K</span>
+                                            <span className="text-white text-xs font-bold">C</span>
                                         </div>
                                     </div>
 
                                     <h4 className="font-chaney text-lg text-cosmic-white mb-2 group-hover:text-stellar-mint transition-colors duration-300">
-                                        {speaker.name}
+                                        {member.name}
                                     </h4>
-                                    <p className="font-space text-cosmic-teal font-medium mb-1 text-sm">{speaker.title}</p>
-                                    <p className="font-space text-stellar-mint text-xs mb-3">{speaker.organization}</p>
+                                    <p className="font-space text-cosmic-teal font-medium mb-1 text-sm">{member.title}</p>
+                                    <p className="font-space text-stellar-mint text-xs mb-3">{member.organization}</p>
 
                                     <div className="border-t border-cosmic-teal/20 pt-3 mt-3">
                                         <p className="font-space text-cosmic-white text-xs mb-2">
-                                            <span className="text-cosmic-teal font-semibold">Expertise:</span> {speaker.expertise}
+                                            <span className="text-cosmic-teal font-semibold">Expertise:</span> {member.expertise}
                                         </p>
                                         <p className="font-space text-stellar-mint text-xs italic">
-                                            "{speaker.talk}"
+                                            {member.talk}
                                         </p>
                                     </div>
                                 </motion.div>
@@ -164,7 +158,7 @@ const Speakers = () => {
                     </div>
                 </motion.div>
 
-                {/* Featured Speakers */}
+                {/* Committee Members */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -173,7 +167,7 @@ const Speakers = () => {
                     className="mb-12"
                 >
                     <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-teal text-center mb-8">
-                        Featured Speakers
+                        Committee Members
                     </h3>
 
                     <motion.div
@@ -183,11 +177,11 @@ const Speakers = () => {
                         viewport={{ once: true }}
                         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                     >
-                        {featuredSpeakers.map((speaker, index) => {
-                            const IconComponent = speaker.icon;
+                        {committeeMembers.map((member, index) => {
+                            const IconComponent = member.icon;
                             return (
                                 <motion.div
-                                    key={speaker.name}
+                                    key={member.name}
                                     variants={itemVariants}
                                     className="space-card framer-animated rounded-2xl p-4 text-center group hover:cosmic-glow transition-all duration-300"
                                     whileHover={{ scale: 1.05 }}
@@ -197,17 +191,17 @@ const Speakers = () => {
                                         <IconComponent className="w-7 h-7 text-white" />
                                     </div>
                                     <h4 className="font-chaney text-base text-cosmic-white mb-1 group-hover:text-stellar-mint transition-colors duration-300">
-                                        {speaker.name}
+                                        {member.name}
                                     </h4>
-                                    <p className="font-space text-stellar-mint text-xs mb-1">{speaker.organization}</p>
-                                    <p className="font-space text-cosmic-teal text-xs">{speaker.expertise}</p>
+                                    <p className="font-space text-stellar-mint text-xs mb-1">{member.organization}</p>
+                                    <p className="font-space text-cosmic-teal text-xs">{member.expertise}</p>
                                 </motion.div>
                             );
                         })}
                     </motion.div>
                 </motion.div>
 
-                {/* Student Program Highlight */}
+                {/* Conference Information */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -220,34 +214,42 @@ const Speakers = () => {
                             <GraduationCap className="w-12 h-12 text-cosmic-teal" />
                         </div>
                         <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-white mb-4">
-                            Student <span className="text-cosmic-teal">Program</span>
+                            Conference <span className="text-cosmic-teal">Information</span>
                         </h3>
                         <p className="font-space text-base text-stellar-mint mb-6 leading-relaxed">
-                            Special opportunities for undergraduate and graduate students to present their research,
-                            network with experts, and gain valuable insights into GPS Radio Occultation applications.
+                            A meeting website will soon be opened for registrations and abstract submissions.
+                            We will keep you updated as we finalize the program details and speaker lineup.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                             <div className="space-y-2">
                                 <div className="flex justify-center">
                                     <BarChart3 className="w-6 h-6 text-cosmic-teal" />
                                 </div>
-                                <h4 className="font-space font-semibold text-cosmic-white text-sm">Poster Sessions</h4>
-                                <p className="font-space text-xs text-stellar-mint">Present your research</p>
+                                <h4 className="font-space font-semibold text-cosmic-white text-sm">Call for Papers</h4>
+                                <p className="font-space text-xs text-stellar-mint">Abstract submissions opening soon</p>
                             </div>
                             <div className="space-y-2">
                                 <div className="flex justify-center">
                                     <Users className="w-6 h-6 text-cosmic-teal" />
                                 </div>
-                                <h4 className="font-space font-semibold text-cosmic-white text-sm">Networking</h4>
-                                <p className="font-space text-xs text-stellar-mint">Connect with experts</p>
+                                <h4 className="font-space font-semibold text-cosmic-white text-sm">International Participation</h4>
+                                <p className="font-space text-xs text-stellar-mint">Global community welcome</p>
                             </div>
                             <div className="space-y-2">
                                 <div className="flex justify-center">
                                     <Award className="w-6 h-6 text-cosmic-teal" />
                                 </div>
-                                <h4 className="font-space font-semibold text-cosmic-white text-sm">Awards</h4>
-                                <p className="font-space text-xs text-stellar-mint">Recognition for excellence</p>
+                                <h4 className="font-space font-semibold text-cosmic-white text-sm">Free Registration</h4>
+                                <p className="font-space text-xs text-stellar-mint">No registration fees</p>
                             </div>
+                        </div>
+                        <div className="mt-6 pt-4 border-t border-cosmic-teal/20">
+                            <p className="font-space text-sm text-cosmic-teal italic">
+                                "Looking forward to seeing you in Tainan, Taiwan."
+                            </p>
+                            <p className="font-space text-xs text-stellar-mint mt-2">
+                                - Charles Lin and Jan-Peter Weiss on behalf of the organizing committee
+                            </p>
                         </div>
                     </div>
                 </motion.div>

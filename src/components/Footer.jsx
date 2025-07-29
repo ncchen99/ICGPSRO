@@ -10,58 +10,58 @@ const Footer = ({ lenis }) => {
         {
             icon: Mail,
             label: "Email",
-            value: "cosmic-websites@ucar.edu",
-            link: "mailto:cosmic-websites@ucar.edu"
+            value: "Contact organizing committee",
+            link: "#contact"
         },
         {
             icon: Globe,
             label: "Website",
-            value: "www.cosmic.ucar.edu",
-            link: "https://www.cosmic.ucar.edu"
+            value: "Information coming soon",
+            link: "#"
         },
         {
             icon: Phone,
-            label: "Phone",
-            value: "+886-6-2757575",
-            link: "tel:+886-6-2757575"
+            label: "Location",
+            value: "National Cheng Kung University",
+            link: "#"
         }
     ];
 
     const quickLinks = [
         { label: "Conference Overview", href: "#conference-intro" },
-        { label: "Speakers", href: "#speakers" },
+        { label: "Organizing Committee", href: "#speakers" },
         { label: "Agenda", href: "#agenda" },
         { label: "Registration", href: "#join" },
         { label: "FAQ", href: "#faq" }
     ];
 
     const partnerLinks = [
-        { label: "UCAR COSMIC Program", href: "https://www.cosmic.ucar.edu" },
         { label: "Taiwan Space Agency", href: "https://www.tasa.org.tw" },
-        { label: "National Science Foundation", href: "https://www.nsf.gov" },
-        { label: "TASTI Conference", href: "https://tasti.org.tw" }
+        { label: "Han-Min Hsia Space Tech. Center", href: "#" },
+        { label: "National Cheng Kung University", href: "https://www.ncku.edu.tw" },
+        { label: "UCAR COSMIC Program", href: "https://www.cosmic.ucar.edu" }
     ];
 
     const transportInfo = [
         {
             icon: Plane,
             title: "Taoyuan International Airport (TPE)",
-            details: "45 minutes by Airport MRT or taxi to downtown Taipei"
+            details: "1.5 hours by high speed rail from TPE to Tainan"
         },
         {
             icon: Train,
-            title: "Taipei Metro System",
-            details: "Comprehensive subway network connecting all major areas"
+            title: "Taiwan High Speed Rail",
+            details: "Direct service from Taipei to Tainan in 1.5 hours"
         },
         {
             icon: Bus,
-            title: "Conference Shuttle",
-            details: "Daily shuttles from selected hotels to venue"
+            title: "Local Transportation",
+            details: "City buses and taxis available from Tainan Station"
         },
         {
             icon: Car,
-            title: "Taxi & Ride-sharing",
-            details: "Uber and local taxi services widely available"
+            title: "NCKU Campus Access",
+            details: "National Cheng Kung University, East District, Tainan"
         }
     ];
 
@@ -81,22 +81,22 @@ const Footer = ({ lenis }) => {
                     >
                         <div className="mb-6">
                             <h3 className="font-chaney text-2xl text-cosmic-white mb-4">
-                                <span className="nebula-text">ICGPSRO</span>
+                                <span className="nebula-text">ICGPSRO 2025</span>
                             </h3>
                             <p className="font-space text-stellar-mint leading-relaxed">
-                                International Conference on GPS Radio Occultation - Advancing
-                                GNSS-based remote sensing for atmospheric and space sciences.
+                                7th International Conference on GPS Radio Occultation - Advancing
+                                GNSS-based remote sensing for meteorology, climate, and space science.
                             </p>
                         </div>
 
                         <div className="space-y-4">
                             <div className="flex items-center space-x-3">
                                 <div className="w-3 h-3 bg-cosmic-teal rounded-full animate-pulse"></div>
-                                <span className="font-space text-cosmic-white">October 30 - November 3, 2025</span>
+                                <span className="font-space text-cosmic-white">28-30 October 2025</span>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <div className="w-3 h-3 bg-stellar-mint rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                                <span className="font-space text-cosmic-white">Taipei, Taiwan</span>
+                                <span className="font-space text-cosmic-white">Tainan, Taiwan</span>
                             </div>
                         </div>
                     </motion.div>
@@ -188,7 +188,7 @@ const Footer = ({ lenis }) => {
                     className="mt-16 pt-12 border-t border-cosmic-teal/20"
                 >
                     <h4 className="font-chaney text-lg sm:text-xl md:text-2xl text-cosmic-teal text-center mb-12">
-                        Getting to Taipei
+                        Getting to Tainan
                     </h4>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -237,18 +237,16 @@ const Footer = ({ lenis }) => {
                             Stay Updated
                         </h4>
                         <p className="font-space text-stellar-mint mb-8">
-                            Subscribe to receive the latest conference updates and announcements
+                            A meeting website will soon be opened for registrations and abstract submissions
                         </p>
 
-                        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="flex-1 px-4 py-3 rounded-full bg-white/10 border border-cosmic-teal/30 text-cosmic-white placeholder-cosmic-white/50 focus:outline-none focus:border-cosmic-teal font-space"
-                            />
-                            <button className="cosmic-button px-6 py-3 rounded-full font-semibold font-space">
-                                <span className="relative z-10">Subscribe</span>
-                            </button>
+                        <div className="text-center">
+                            <p className="font-space text-cosmic-teal italic">
+                                "Looking forward to seeing you in Tainan, Taiwan."
+                            </p>
+                            <p className="font-space text-stellar-mint text-sm mt-2">
+                                - Charles Lin and Jan-Peter Weiss on behalf of the organizing committee
+                            </p>
                         </div>
                     </div>
                 </motion.div>
