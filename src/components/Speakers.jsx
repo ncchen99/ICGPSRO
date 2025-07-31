@@ -49,7 +49,7 @@ const Speakers = () => {
             icon: UserCheck
         },
         {
-            name: "Su-Ya Chen",
+            name: "Shu-Ya Chen",
             organization: "GPS-ARC, NCU",
             expertise: "GPS Applications",
             icon: UserCheck

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Satellite, Rocket, Microscope, Globe, Radio, Cloud } from 'lucide-react';
+import { Satellite, Rocket, Microscope, Globe, Radio, Cloud, User } from 'lucide-react';
 import TASAImage from '../assets/images/TASA.png';
 import HMSSTCImage from '../assets/images/hmsstc.png';
 
@@ -18,35 +18,35 @@ const Host = () => {
     const committeeMembers = [
         {
             name: "Charles Lin (NCKU)",
-            icon: Microscope
+            icon: User
         },
         {
             name: "Jan-Peter Weiss (UCAR COSMIC)",
-            icon: Globe
+            icon: User
         },
         {
             name: "Vick Chu (Executive Vice Director of TASA)",
-            icon: Radio
+            icon: User
         },
         {
             name: "Cheng-Yun Huang (FORMOSAT-7/COSMIC-2 Program Director, TASA)",
-            icon: Satellite
+            icon: User
         },
         {
             name: "Wen-Hao Yeh (TRITON Mission Program Director, TASA)",
-            icon: Rocket
+            icon: User
         },
         {
             name: "Shu-Chih Yang (Department of Atmosphere Science, NCU)",
-            icon: Cloud
+            icon: User
         },
         {
-            name: "Su-Ya Chen (GPS-ARC, NCU)",
-            icon: Globe
+            name: "Shu-Ya Chen (GPS-ARC, NCU)",
+            icon: User
         },
         {
             name: "Nick Pedatella (NCAR HAO)",
-            icon: Satellite
+            icon: User
         }
     ];
 
@@ -184,7 +184,7 @@ const Host = () => {
                 <div className="absolute bottom-20 left-20 w-4 h-4 bg-stellar-mint rounded-full animate-twinkle opacity-50" style={{ animationDelay: '1s' }}></div>
                 <div className="absolute top-1/2 left-10 w-2 h-2 bg-cosmic-white rounded-full animate-twinkle opacity-50" style={{ animationDelay: '2s' }}></div>
 
-                {/* Partnership statement */}
+                {/* Partnership statement
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -205,7 +205,7 @@ const Host = () => {
                             <p>Charles Lin and Jan-Peter Weiss on behalf of the organizing committee</p>
                         </div>
                     </div>
-                </motion.div>
+                </motion.div> */}
             </div>
         </section>
     );

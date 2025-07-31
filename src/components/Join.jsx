@@ -5,9 +5,10 @@ const Join = () => {
     const keyDates = [
         {
             label: "Abstract Submission Opens",
-            date: "Spring 2025",
+            date: "Summer  2025",
             status: "upcoming",
-            discount: "Call for papers"
+            discount: "Call for papers",
+            link: "https://forms.gle/9eYfqbZGWEBB54CD6"
         },
         {
             label: "Registration Opens",
@@ -71,7 +72,7 @@ const Join = () => {
                     </p>
                 </motion.div>
 
-                {/* Registration Information */}
+                {/* Registration Form */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -79,22 +80,105 @@ const Join = () => {
                     viewport={{ once: true }}
                     className="text-center mb-20"
                 >
-                    <div className="space-card framer-animated rounded-3xl p-12 max-w-4xl mx-auto">
-                        <div className="mb-6 flex justify-center">
-                            <Rocket className="w-16 h-16 text-cosmic-teal" />
+                    <div className="bg-white/95 backdrop-blur-sm border border-cosmic-teal/20 shadow-2xl rounded-3xl max-w-5xl mx-auto overflow-hidden">
+                        {/* Header section with padding */}
+                        <div className="p-8 pb-0">
+                            <div className="mb-6 flex justify-center">
+                                <Rocket className="w-16 h-16 text-cosmic-teal" />
+                            </div>
+                            <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-800 mb-8">
+                                Conference Registration
+                            </h3>
+                            <div className="mb-8">
+                                <p className="text-gray-700 font-space text-lg leading-relaxed mb-4">
+                                    Register now for ICGPSRO 2025 in Tainan, Taiwan
+                                </p>
+                                <p className="text-cosmic-teal font-medium italic">
+                                    Free registration - Looking forward to seeing you there!
+                                </p>
+                            </div>
                         </div>
-                        <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cosmic-white mb-8">
-                            Registration Information
-                        </h3>
-                        <div className="space-y-6 text-stellar-mint font-space text-lg leading-relaxed">
-                            <p>
-                                A meeting website will soon be opened for registrations and abstract submissions.
-                                We will keep you updated.
-                            </p>
-                            <p className="text-cosmic-teal font-medium italic">
-                                Looking forward to seeing you in Tainan, Taiwan.
-                            </p>
+
+                        {/* Registration Form Iframe - Full width, no padding */}
+                        <div className="w-full">
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLScWi0H-v0ePzgblZbV9c0FBKUnTwhEb6xaL_YyCERiWpuMToQ/viewform?embedded=true"
+                                width="100%"
+                                height="700"
+                                frameBorder="0"
+                                marginHeight="0"
+                                marginWidth="0"
+                                className="w-full"
+                                title="ICGPSRO 2025 Registration Form"
+                            >
+                                Loading...
+                            </iframe>
                         </div>
+                    </div>
+                </motion.div>
+
+                {/* Abstract Submission Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    className="text-center mb-20"
+                >
+                    <div className="space-card framer-animated rounded-3xl p-8 max-w-5xl mx-auto relative overflow-hidden border-2 border-stellar-mint cosmic-glow">
+                        {/* Background gradient for emphasis */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-stellar-mint/10 via-cosmic-teal/5 to-transparent"></div>
+
+                        <div className="relative z-10">
+                            <div className="mb-6 flex justify-center">
+                                <FileText className="w-16 h-16 text-stellar-mint animate-pulse" />
+                            </div>
+                            <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-stellar-mint mb-6">
+                                Abstract Submission
+                            </h3>
+                            <div className="space-y-4 text-cosmic-white font-space text-lg leading-relaxed mb-8">
+                                <p className="text-stellar-mint font-semibold text-xl">
+                                    Call for Papers - Submit Your Research!
+                                </p>
+                                <p>
+                                    Share your latest research in GPS Radio Occultation, atmospheric sciences,
+                                    and related fields with the global community.
+                                </p>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-left">
+                                    <div className="flex items-start space-x-3">
+                                        <CheckCircle className="w-5 h-5 text-stellar-mint mt-1 flex-shrink-0" />
+                                        <span>Original research papers</span>
+                                    </div>
+                                    <div className="flex items-start space-x-3">
+                                        <CheckCircle className="w-5 h-5 text-stellar-mint mt-1 flex-shrink-0" />
+                                        <span>Technical innovations</span>
+                                    </div>
+                                    <div className="flex items-start space-x-3">
+                                        <CheckCircle className="w-5 h-5 text-stellar-mint mt-1 flex-shrink-0" />
+                                        <span>Case studies & analysis</span>
+                                    </div>
+                                    <div className="flex items-start space-x-3">
+                                        <CheckCircle className="w-5 h-5 text-stellar-mint mt-1 flex-shrink-0" />
+                                        <span>Review papers welcome</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button
+                                onClick={() => window.open("https://forms.gle/9eYfqbZGWEBB54CD6", '_blank')}
+                                className="cosmic-button px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-2xl group"
+                            >
+                                <span className="flex items-center space-x-3">
+                                    <FileText className="w-6 h-6 group-hover:animate-bounce" />
+                                    <span>Submit Abstract Now</span>
+                                    <div className="w-2 h-2 bg-stellar-mint rounded-full animate-ping"></div>
+                                </span>
+                            </button>
+                        </div>
+
+                        {/* Decorative elements */}
+                        <div className="absolute top-4 right-4 w-8 h-8 border-2 border-stellar-mint/30 rounded-full animate-spin"></div>
+                        <div className="absolute bottom-4 left-4 w-6 h-6 bg-stellar-mint/20 rounded-full animate-pulse"></div>
                     </div>
                 </motion.div>
 
@@ -118,11 +202,12 @@ const Join = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                className={`space-card framer-animated rounded-2xl p-6 text-center border-l-4 ${date.status === 'active' ? 'border-cosmic-teal cosmic-glow' :
+                                className={`space-card framer-animated rounded-2xl p-6 text-center border-l-4 ${date.link ? 'cursor-pointer hover:scale-105 transition-transform duration-300' : ''} ${date.status === 'active' ? 'border-cosmic-teal cosmic-glow' :
                                     date.status === 'ended' ? 'border-gray-500 opacity-60' :
                                         date.status === 'event' ? 'border-stellar-mint' :
                                             'border-cosmic-teal/50'
                                     }`}
+                                onClick={() => date.link && window.open(date.link, '_blank')}
                             >
                                 <div className={`mb-3 flex justify-center ${date.status === 'active' ? 'animate-pulse' : ''
                                     }`}>

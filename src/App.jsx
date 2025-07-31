@@ -21,7 +21,7 @@ function App() {
   const gsapContext = useGSAP();
 
   // Google Form URL for registration
-  const GOOGLE_FORM_URL = "https://forms.google.com/your-form-url-here";
+  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScWi0H-v0ePzgblZbV9c0FBKUnTwhEb6xaL_YyCERiWpuMToQ/viewform";
 
   useEffect(() => {
     // GSAP ScrollTrigger animations for enhanced user experience
