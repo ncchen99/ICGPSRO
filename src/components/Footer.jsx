@@ -226,7 +226,7 @@ const Footer = ({ lenis }) => {
                 </motion.div>
 
                 {/* Newsletter signup */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -250,7 +250,7 @@ const Footer = ({ lenis }) => {
                             </p>
                         </div>
                     </div>
-                </motion.div>
+                </motion.div> */}
             </div>
 
             {/* Bottom bar */}
