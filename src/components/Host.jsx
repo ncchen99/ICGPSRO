@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Satellite, Rocket, Microscope, Globe, Radio, Cloud, User } from 'lucide-react';
 import TASAImage from '../assets/images/TASA.png';
 import HMSSTCImage from '../assets/images/hmsstc.png';
 
@@ -15,40 +14,7 @@ const Host = () => {
         }
     };
 
-    const committeeMembers = [
-        {
-            name: "Charles Lin (NCKU)",
-            icon: User
-        },
-        {
-            name: "Jan-Peter Weiss (UCAR COSMIC)",
-            icon: User
-        },
-        {
-            name: "Vick Chu (Executive Vice Director of TASA)",
-            icon: User
-        },
-        {
-            name: "Cheng-Yun Huang (FORMOSAT-7/COSMIC-2 Program Director, TASA)",
-            icon: User
-        },
-        {
-            name: "Wen-Hao Yeh (TRITON Mission Program Director, TASA)",
-            icon: User
-        },
-        {
-            name: "Shu-Chih Yang (Department of Atmosphere Science, NCU)",
-            icon: User
-        },
-        {
-            name: "Shu-Ya Chen (GPS-ARC, NCU)",
-            icon: User
-        },
-        {
-            name: "Nick Pedatella (NCAR HAO)",
-            icon: User
-        }
-    ];
+    // Committee section removed per request
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -83,7 +49,7 @@ const Host = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="font-chaney text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-cosmic-white mb-6">
-                        <span className="nebula-text">Organizers & Committee</span>
+                        <span className="nebula-text">Hosts & Sponsors</span>
                     </h2>
                     <div className="section-divider max-w-md mx-auto"></div>
                 </motion.div>
@@ -144,40 +110,7 @@ const Host = () => {
                     </div>
                 </motion.div>
 
-                {/* Organizing Committee */}
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    className="mb-16"
-                >
-                    <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal text-center mb-12">
-                        Organizing Committee
-                    </h3>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                        {committeeMembers.map((member, index) => {
-                            const IconComponent = member.icon;
-                            return (
-                                <motion.div
-                                    key={member.name}
-                                    variants={itemVariants}
-                                    className="space-card framer-animated rounded-2xl p-6 group hover:cosmic-glow transition-all duration-500"
-                                    whileHover={{ scale: 1.02 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <div className="mb-4 group-hover:animate-float flex justify-center">
-                                        <IconComponent className="w-10 h-10 text-cosmic-teal group-hover:text-stellar-mint transition-colors duration-300" />
-                                    </div>
-                                    <h4 className="font-space font-semibold text-sm text-cosmic-white group-hover:text-stellar-mint transition-colors duration-300 leading-snug text-center">
-                                        {member.name}
-                                    </h4>
-                                </motion.div>
-                            );
-                        })}
-                    </div>
-                </motion.div>
+                {/* Committee removed per request */}
 
                 {/* Decorative elements */}
                 <div className="absolute top-10 right-10 w-6 h-6 bg-cosmic-teal rounded-full animate-twinkle opacity-50"></div>

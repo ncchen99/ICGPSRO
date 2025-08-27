@@ -7,7 +7,6 @@ import { Rocket, ChevronUp } from 'lucide-react';
 import Banner from './components/Banner';
 import Host from './components/Host';
 import ConferenceIntro from './components/ConferenceIntro';
-import Speakers from './components/Speakers';
 import Agenda from './components/Agenda';
 import Join from './components/Join';
 import FAQ from './components/FAQ';
@@ -92,19 +91,14 @@ function App() {
           <ConferenceIntro lenis={lenis} />
         </section>
 
-        {/* Speakers Section */}
-        <section id="speakers" className="py-20 px-6">
-          <Speakers />
+        {/* Registration Section (moved before Agenda) */}
+        <section id="join" className="py-20 px-6">
+          <Join />
         </section>
 
         {/* Agenda Section */}
         <section id="agenda" className="py-20 px-6">
           <Agenda />
-        </section>
-
-        {/* Registration Section */}
-        <section id="join" className="py-20 px-6">
-          <Join />
         </section>
 
         {/* FAQ Section */}

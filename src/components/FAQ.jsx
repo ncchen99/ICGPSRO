@@ -205,10 +205,10 @@ const FAQ = () => {
 
                         <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
                             <button
-                                onClick={() => window.open('#contact', '_blank')}
+                                onClick={() => window.open('mailto:10810048@gs.ncku.edu.tw')}
                                 className="cosmic-button px-8 py-4 rounded-full font-semibold font-space text-lg w-full sm:w-auto"
                             >
-                                <span className="relative z-10">Contact Organizers</span>
+                                <span className="relative z-10">Email Organizers</span>
                             </button>
                             <button className="px-8 py-4 border-2 border-stellar-mint rounded-full font-semibold text-stellar-mint hover:bg-stellar-mint hover:text-dark-space transition-all duration-300 font-space text-lg w-full sm:w-auto">
                                 Download Information
@@ -223,7 +223,7 @@ const FAQ = () => {
                                     </div>
                                     <p className="font-space text-sm">
                                         <span className="font-semibold">Contact:</span><br />
-                                        Organizing Committee
+                                        <a href="mailto:10810048@gs.ncku.edu.tw" className="underline">10810048@gs.ncku.edu.tw</a>
                                     </p>
                                 </div>
                                 <div>

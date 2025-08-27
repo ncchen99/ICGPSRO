@@ -10,8 +10,8 @@ const Footer = ({ lenis }) => {
         {
             icon: Mail,
             label: "Email",
-            value: "Contact organizing committee",
-            link: "#contact"
+            value: "10810048@gs.ncku.edu.tw",
+            link: "mailto:10810048@gs.ncku.edu.tw"
         },
         {
             icon: Globe,
@@ -29,7 +29,7 @@ const Footer = ({ lenis }) => {
 
     const quickLinks = [
         { label: "Conference Overview", href: "#conference-intro" },
-        { label: "Organizing Committee", href: "#speakers" },
+        { label: "Hosts & Sponsors", href: "#host" },
         { label: "Agenda", href: "#agenda" },
         { label: "Registration", href: "#join" },
         { label: "FAQ", href: "#faq" }

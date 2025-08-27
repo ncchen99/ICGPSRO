@@ -3,13 +3,13 @@ import { User, GraduationCap, Monitor, Star, Users, BookOpen, Award, Rocket, Clo
 
 const Join = () => {
     const keyDates = [
-        {
-            label: "Abstract Submission Opens",
-            date: "Summer  2025",
-            status: "upcoming",
-            discount: "Call for papers",
-            link: "https://forms.gle/9eYfqbZGWEBB54CD6"
-        },
+        // {
+        //     label: "Abstract Submission Opens",
+        //     date: "Summer  2025",
+        //     status: "upcoming",
+        //     discount: "Call for papers",
+        //     link: "https://forms.gle/9eYfqbZGWEBB54CD6"
+        // },
         {
             label: "Registration Opens",
             date: "Summer 2025",
@@ -17,10 +17,16 @@ const Join = () => {
             discount: "Free registration"
         },
         {
-            label: "Abstract Deadline",
-            date: "September 2025",
+            label: "Abstract Submission Deadline",
+            date: "12 September 2025",
             status: "upcoming",
             discount: "Submit your research"
+        },
+        {
+            label: "Program Release",
+            date: "26 September 2025",
+            status: "upcoming",
+            discount: "Program release"
         },
         {
             label: "Conference Dates",
@@ -87,11 +93,14 @@ const Join = () => {
                                 <Rocket className="w-16 h-16 text-cosmic-teal" />
                             </div>
                             <h3 className="font-chaney text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-800 mb-8">
-                                Conference Registration
+                                Registration & Abstract Submission
                             </h3>
                             <div className="mb-8">
                                 <p className="text-gray-700 font-space text-lg leading-relaxed mb-4">
-                                    Register now for ICGPSRO 2025 in Tainan, Taiwan
+                                    Register and submit your abstract for ICGPSRO 2025 in Tainan, Taiwan
+                                </p>
+                                <p className="text-gray-700 font-space text-lg leading-relaxed mb-4">
+                                    Abstract submission deadline: <span className="font-semibold">12 September 2025</span>. Program will be released on <span className="font-semibold">26 September 2025</span>.
                                 </p>
                                 <p className="text-cosmic-teal font-medium italic">
                                     Free registration - Looking forward to seeing you there!
@@ -99,17 +108,22 @@ const Join = () => {
                             </div>
                         </div>
 
-                        {/* Registration Form Iframe - Full width, no padding */}
-                        <div className="w-full">
+                        {/* Registration Form Iframe - Full width, mobile scrollable */}
+                        <div
+                            className="w-full"
+                            style={{ WebkitOverflowScrolling: 'touch', touchAction: 'auto' }}
+                            data-lenis-prevent="true"
+                        >
                             <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLScWi0H-v0ePzgblZbV9c0FBKUnTwhEb6xaL_YyCERiWpuMToQ/viewform?embedded=true"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSftXCnJUxhKbCc8NsmthL3YZXl4Wonj1df25626dmEcICUoNQ/viewform?embedded=true"
                                 width="100%"
-                                height="700"
+                                height="720"
                                 frameBorder="0"
                                 marginHeight="0"
                                 marginWidth="0"
-                                className="w-full"
+                                className="w-full overflow-auto"
                                 title="ICGPSRO 2025 Registration Form"
+                                scrolling="yes"
                             >
                                 Loading...
                             </iframe>
@@ -118,7 +132,7 @@ const Join = () => {
                 </motion.div>
 
                 {/* Abstract Submission Section */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -126,7 +140,7 @@ const Join = () => {
                     className="text-center mb-20"
                 >
                     <div className="space-card framer-animated rounded-3xl p-8 max-w-5xl mx-auto relative overflow-hidden border-2 border-stellar-mint cosmic-glow">
-                        {/* Background gradient for emphasis */}
+                
                         <div className="absolute inset-0 bg-gradient-to-br from-stellar-mint/10 via-cosmic-teal/5 to-transparent"></div>
 
                         <div className="relative z-10">
@@ -176,11 +190,10 @@ const Join = () => {
                             </button>
                         </div>
 
-                        {/* Decorative elements */}
                         <div className="absolute top-4 right-4 w-8 h-8 border-2 border-stellar-mint/30 rounded-full animate-spin"></div>
                         <div className="absolute bottom-4 left-4 w-6 h-6 bg-stellar-mint/20 rounded-full animate-pulse"></div>
                     </div>
-                </motion.div>
+                </motion.div> */}
 
                 {/* Key dates timeline */}
                 <motion.div
