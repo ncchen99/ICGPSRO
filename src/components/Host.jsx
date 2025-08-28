@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import TASAImage from '../assets/images/TASA.png';
 import HMSSTCImage from '../assets/images/hmsstc.png';
+import UCARImage from '../assets/images/UCAR.png';
 
 const Host = () => {
     const organizerInfo = {
@@ -8,10 +9,16 @@ const Host = () => {
             name: "Taiwan Space Agency",
             image: TASAImage
         },
-        coOrganizer: {
-            name: "Han-Min Hsia Space Tech. Center, NCKU",
-            image: HMSSTCImage
-        }
+        coOrganizers: [
+            {
+                name: "Han-Min Hsia Space Tech. Center, NCKU",
+                image: HMSSTCImage
+            },
+            {
+                name: "UCAR COSMIC Office",
+                image: UCARImage
+            }
+        ]
     };
 
     // Committee section removed per request
@@ -54,7 +61,7 @@ const Host = () => {
                     <div className="section-divider max-w-md mx-auto"></div>
                 </motion.div>
 
-                {/* Main Organizers - Side by side layout */}
+                {/* Main Organizers Layout */}
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
@@ -62,8 +69,8 @@ const Host = () => {
                     viewport={{ once: true }}
                     className="mb-20"
                 >
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                        {/* Organizer */}
+                    {/* Organizer - Full width */}
+                    <div className="mb-16">
                         <motion.div
                             variants={itemVariants}
                             className="text-center"
@@ -71,7 +78,7 @@ const Host = () => {
                             <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal mb-8">
                                 Organizer
                             </h3>
-                            <div className="space-card framer-animated rounded-3xl p-8 group hover:cosmic-glow transition-all duration-500">
+                            <div className="space-card framer-animated rounded-3xl p-8 group hover:cosmic-glow transition-all duration-500 max-w-md mx-auto">
                                 <div className="mb-6 flex justify-center">
                                     <img
                                         src={organizerInfo.organizer.image}
@@ -85,28 +92,36 @@ const Host = () => {
                                 </h4>
                             </div>
                         </motion.div>
+                    </div>
 
-                        {/* Co-organizer */}
-                        <motion.div
-                            variants={itemVariants}
-                            className="text-center"
-                        >
-                            <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal mb-8">
-                                Co-organizer
-                            </h3>
-                            <div className="space-card framer-animated rounded-3xl p-8 group hover:cosmic-glow transition-all duration-500">
-                                <div className="mb-6 flex justify-center">
-                                    <img
-                                        src={organizerInfo.coOrganizer.image}
-                                        alt={organizerInfo.coOrganizer.name}
-                                        className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
-                                    />
-                                </div>
-                                <h4 className="font-space font-semibold text-lg text-cosmic-white group-hover:text-stellar-mint transition-colors duration-300">
-                                    {organizerInfo.coOrganizer.name}
-                                </h4>
-                            </div>
-                        </motion.div>
+                    {/* Co-organizers - Side by side */}
+                    <div>
+                        <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal mb-8 text-center">
+                            Co-organizers
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                            {organizerInfo.coOrganizers.map((coOrg, index) => (
+                                <motion.div
+                                    key={index}
+                                    variants={itemVariants}
+                                    className="text-center"
+                                >
+                                    <div className="space-card framer-animated rounded-3xl p-8 group hover:cosmic-glow transition-all duration-500">
+                                        <div className="mb-6 flex justify-center">
+                                            <img
+                                                src={coOrg.image}
+                                                alt={coOrg.name}
+                                                className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
+                                                style={coOrg.name.includes('UCAR') ? { filter: 'brightness(0) invert(1)' } : {}}
+                                            />
+                                        </div>
+                                        <h4 className="font-space font-semibold text-lg text-cosmic-white group-hover:text-stellar-mint transition-colors duration-300">
+                                            {coOrg.name}
+                                        </h4>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
                     </div>
                 </motion.div>
 
