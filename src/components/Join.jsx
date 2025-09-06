@@ -18,13 +18,13 @@ const Join = () => {
         },
         {
             label: "Abstract Submission Deadline",
-            date: "12 September 2025",
+            date: "24 September 2025",
             status: "upcoming",
             discount: "Submit your research"
         },
         {
             label: "Program Release",
-            date: "26 September 2025",
+            date: "10 October 2025",
             status: "upcoming",
             discount: "Program release"
         },
@@ -100,7 +100,7 @@ const Join = () => {
                                     Register and submit your abstract for ICGPSRO 2025 in Tainan, Taiwan
                                 </p>
                                 <p className="text-gray-700 font-space text-lg leading-relaxed mb-4">
-                                    Abstract submission deadline: <span className="font-semibold">12 September 2025</span>. Program will be released on <span className="font-semibold">26 September 2025</span>.
+                                    Abstract submission deadline: <span className="font-semibold">24 September 2025</span>. Program will be released on <span className="font-semibold">10 October 2025</span>.
                                 </p>
                                 <p className="text-cosmic-teal font-medium italic">
                                     Free registration - Looking forward to seeing you there!
