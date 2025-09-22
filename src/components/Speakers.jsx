@@ -239,8 +239,8 @@ const Speakers = () => {
                                 <div className="flex justify-center">
                                     <Award className="w-6 h-6 text-cosmic-teal" />
                                 </div>
-                                <h4 className="font-space font-semibold text-cosmic-white text-sm">Free Registration</h4>
-                                <p className="font-space text-xs text-stellar-mint">No registration fees</p>
+                                <h4 className="font-space font-semibold text-cosmic-white text-sm">Registration Fees</h4>
+                                <p className="font-space text-xs text-stellar-mint">General: 150 USD, Student/Retired: 100 USD</p>
                             </div>
                         </div>
                         <div className="mt-6 pt-4 border-t border-cosmic-teal/20">

@@ -14,7 +14,7 @@ const Join = () => {
             label: "Registration Opens",
             date: "Summer 2025",
             status: "upcoming",
-            discount: "Free registration"
+            discount: "Registration required"
         },
         {
             label: "Abstract Submission Deadline",
@@ -74,7 +74,7 @@ const Join = () => {
                     </h2>
                     <div className="section-divider max-w-md mx-auto"></div>
                     <p className="font-space text-xl text-stellar-mint max-w-4xl mx-auto leading-relaxed">
-                        Free registration for the premier international conference on GPS Radio Occultation in Tainan, Taiwan
+                        Premier international conference on GPS Radio Occultation in Tainan, Taiwan. General registration: 150 USD, Student/Retired scientist: 100 USD
                     </p>
                 </motion.div>
 
@@ -103,7 +103,7 @@ const Join = () => {
                                     Abstract submission deadline: <span className="font-semibold">24 September 2025</span>. Program will be released on <span className="font-semibold">10 October 2025</span>.
                                 </p>
                                 <p className="text-cosmic-teal font-medium italic">
-                                    Free registration - Looking forward to seeing you there!
+                                    Registration fees: General 150 USD, Student/Retired scientist 100 USD - Looking forward to seeing you there!
                                 </p>
                             </div>
                         </div>

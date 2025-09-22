@@ -15,7 +15,7 @@ const FAQ = () => {
                 },
                 {
                     question: "Is there a registration fee?",
-                    answer: "No, ICGPSRO 2025 is completely free to attend! There are no registration fees for any participants, whether attending in person or virtually. This includes access to all sessions, materials, and networking opportunities."
+                    answer: "Yes, ICGPSRO 2025 has registration fees. General registration fee is 150 USD. Student or retired scientist registration fee is 100 USD. This includes access to all sessions, materials, and networking opportunities."
                 },
                 {
                     question: "Is there a virtual participation option?",

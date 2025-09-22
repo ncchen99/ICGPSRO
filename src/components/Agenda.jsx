@@ -381,9 +381,9 @@ const Agenda = () => {
                         <div className="mb-4 flex justify-center">
                             <Calendar className="w-10 h-10 text-cosmic-teal" />
                         </div>
-                        <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Free Attendance</h4>
+                        <h4 className="font-chaney text-lg sm:text-xl text-dark-space mb-2">Registration Fees</h4>
                         <p className="font-space text-dark-space opacity-80">
-                            No registration fees for all participants
+                            General: 150 USD, Student/Retired scientist: 100 USD
                         </p>
                     </div>
                 </motion.div>
