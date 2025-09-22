@@ -2,23 +2,28 @@ import { motion } from 'framer-motion';
 import TASAImage from '../assets/images/TASA.png';
 import HMSSTCImage from '../assets/images/hmsstc.png';
 import UCARImage from '../assets/images/UCAR.png';
+import GAODARCImage from '../assets/images/GAODARC.png';
 
 const Host = () => {
     const organizerInfo = {
-        organizer: {
+        organizer: [{
+            name: "Han-Min Hsia Space Center, NCKU",
+            image: HMSSTCImage,
+            url: "https://hmsstc.ncku.edu.tw/"
+        }, {
+            name: "GAODARC, NCU",
+            image: GAODARCImage,
+            url: "https://www.gaodarc.ncu.edu.tw/"
+        }],
+        coOrganizers: [{
             name: "Taiwan Space Agency",
-            image: TASAImage
-        },
-        coOrganizers: [
-            {
-                name: "Han-Min Hsia Space Tech. Center, NCKU",
-                image: HMSSTCImage
-            },
-            {
-                name: "UCAR COSMIC Office",
-                image: UCARImage
-            }
-        ]
+            image: TASAImage,
+            url: "https://www.tasa.org.tw/zh-TW"
+        }, {
+            name: "UCAR COSMIC Office",
+            image: UCARImage,
+            url: "https://www.cosmic.ucar.edu/"
+        }]
     };
 
     // Committee section removed per request
@@ -69,56 +74,75 @@ const Host = () => {
                     viewport={{ once: true }}
                     className="mb-20"
                 >
-                    {/* Organizer - Full width */}
-                    <div className="mb-16">
-                        <motion.div
-                            variants={itemVariants}
-                            className="text-center"
-                        >
-                            <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal mb-8">
-                                Organizer
-                            </h3>
-                            <div className="space-card framer-animated rounded-3xl p-8 group hover:cosmic-glow transition-all duration-500 max-w-md mx-auto">
-                                <div className="mb-6 flex justify-center">
-                                    <img
-                                        src={organizerInfo.organizer.image}
-                                        alt={organizerInfo.organizer.name}
-                                        className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
-                                        style={{ filter: 'brightness(0) invert(1)' }}
-                                    />
-                                </div>
-                                <h4 className="font-space font-semibold text-lg text-cosmic-white group-hover:text-stellar-mint transition-colors duration-300">
-                                    {organizerInfo.organizer.name}
-                                </h4>
-                            </div>
-                        </motion.div>
+                    {/* Organizer - Horizontal layout */}
+                    <div className="mb-20">
+                        <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal mb-12 text-center">
+                            Organizer
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            {organizerInfo.organizer.map((org, index) => (
+                                <motion.div
+                                    key={index}
+                                    variants={itemVariants}
+                                    className="text-center"
+                                >
+                                    <a
+                                        href={org.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block"
+                                    >
+                                        <div className="space-card framer-animated rounded-3xl p-8 group hover:cosmic-glow transition-all duration-500 cursor-pointer h-full">
+                                            <div className="mb-6 flex justify-center">
+                                                <img
+                                                    src={org.image}
+                                                    alt={org.name}
+                                                    className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
+                                                    style={{ filter: 'brightness(0) invert(1)' }}
+                                                />
+                                            </div>
+                                            <h4 className="font-space font-semibold text-lg text-cosmic-white group-hover:text-stellar-mint transition-colors duration-300">
+                                                {org.name}
+                                            </h4>
+                                        </div>
+                                    </a>
+                                </motion.div>
+                            ))}
+                        </div>
                     </div>
 
-                    {/* Co-organizers - Side by side */}
+                    {/* Co-organizers - Horizontal layout */}
                     <div>
-                        <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal mb-8 text-center">
+                        <h3 className="font-chaney text-2xl md:text-3xl text-cosmic-teal mb-12 text-center">
                             Co-organizers
                         </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                             {organizerInfo.coOrganizers.map((coOrg, index) => (
                                 <motion.div
                                     key={index}
                                     variants={itemVariants}
                                     className="text-center"
                                 >
-                                    <div className="space-card framer-animated rounded-3xl p-8 group hover:cosmic-glow transition-all duration-500">
-                                        <div className="mb-6 flex justify-center">
-                                            <img
-                                                src={coOrg.image}
-                                                alt={coOrg.name}
-                                                className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
-                                                style={coOrg.name.includes('UCAR') ? { filter: 'brightness(0) invert(1)' } : {}}
-                                            />
+                                    <a
+                                        href={coOrg.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block"
+                                    >
+                                        <div className="space-card framer-animated rounded-3xl p-10 group hover:cosmic-glow transition-all duration-500 cursor-pointer h-full">
+                                            <div className="mb-6 flex justify-center">
+                                                <img
+                                                    src={coOrg.image}
+                                                    alt={coOrg.name}
+                                                    className="h-20 object-contain group-hover:scale-105 transition-transform duration-300"
+                                                    style={{ filter: 'brightness(0) invert(1)' }}
+                                                />
+                                            </div>
+                                            <h4 className="font-space font-semibold text-lg text-cosmic-white group-hover:text-stellar-mint transition-colors duration-300">
+                                                {coOrg.name}
+                                            </h4>
                                         </div>
-                                        <h4 className="font-space font-semibold text-lg text-cosmic-white group-hover:text-stellar-mint transition-colors duration-300">
-                                            {coOrg.name}
-                                        </h4>
-                                    </div>
+                                    </a>
                                 </motion.div>
                             ))}
                         </div>
