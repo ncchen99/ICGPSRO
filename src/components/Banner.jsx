@@ -79,7 +79,7 @@ const Banner = ({ lenis }) => {
                             transition={{ duration: 1, delay: 0.2 }}
                             className="font-chaney text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-cosmic-white leading-tight tracking-tight nebula-text mb-16"
                         >
-                            ICGPSRO
+                            ICGPSRO 2025
                         </motion.h1>
 
                         <motion.div

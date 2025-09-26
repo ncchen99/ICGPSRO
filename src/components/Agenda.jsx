@@ -7,7 +7,7 @@ const Agenda = () => {
 
     const schedule = [
         {
-            date: "Monday, October 28",
+            date: "Tuesday, October 28",
             theme: "Opening & Foundations",
             sessions: [
                 {
@@ -76,7 +76,7 @@ const Agenda = () => {
             ]
         },
         {
-            date: "Tuesday, October 29",
+            date: "Wednesday, October 29",
             theme: "Atmospheric Physics & Space Weather",
             sessions: [
                 {
@@ -145,7 +145,7 @@ const Agenda = () => {
             ]
         },
         {
-            date: "Wednesday, October 30",
+            date: "Thursday, October 30",
             theme: "Future Directions & Collaboration",
             sessions: [
                 {
